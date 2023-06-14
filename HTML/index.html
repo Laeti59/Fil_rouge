@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dce549eaed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
     <title>Bye Buy Car Lille</title>
 </head>
 
 <body>
     <header class="header">
 
+        <!-- Mise en place des coordonées en haut de la page avec leur logo. -->
         <div class="coordonnées-haut">
             <div class="adresse">
                 <i class="fa-solid fa-envelope fa-beat"></i>
@@ -23,26 +24,114 @@
                 <a class="numero" href="tel:+06.51.53.65.32">06.51.53.65.32</a>
             </div>
             <div class="logo">
-                <i class="fa-brands fa-facebook fa-xl"></i>
-                <i class="fa-brands fa-square-instagram fa-xl"></i>
+                <a href="https://www.facebook.com/profile.php?id=100084686411227" target="_blank">
+                    <i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="https://www.instagram.com/bye_buy_car_lille/" target="_blank">
+                    <i class="fa-brands fa-square-instagram fa-xl"></i></a>
             </div>
         </div>
+
+
+        <!--Mise en place du logo et de la barre de navigation-->
         <div class="info">
             <div class="logo-bbc">
-                <!-- <img src="/Image/logo BBC.jpg" alt="Logo Bye Buy Car" width="250" height="150"> -->
+                <img class="img-bbc" src="/Image/logo BBC.png" alt="Logo BBC" width="130" height="80">
+                <div class="titre">
+                    <p class="titre-logo">BYE</p>
+                    <p class="separation">|</p>
+                    <p class="titre-logo">BUY</p>
+                    <p class="separation">|</p>
+                    <p class="titre-logo">CAR</p>
+                </div>
+            </div>
+            <div class="lien-vendeur">
+                <a href="">Vous désirez vendre votre véhicule ?</a> <!--Mettre le lien de la page vendeur-->
+            </div>
+            <div class="menu-deroulant">
+                <a href="">Nos véhicules d'occasion
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                    <!--Mettre le lien de la page menu déroulant-->
+                </a>
+            </div>
+            <div class="logo-home">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+            </div>
+            <div class="lien-acheteur">
+                <a href="">Vous désirez acheter ? <br> Contactez-nous !</a> <!--Mettre le lien page acheteur-->
+            </div>
+            <div class="connection">
+                <a href="" target="_blank">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                <!--Mettre le lien de pop-up connection-->
+            </div>
+            <div class="message-connection">
+                <a href="" target="_blank">Je me connecte</a> <!--Mettre le lien de pop-up connection-->
             </div>
 
         </div>
+
     </header>
+
+    <!--Ici un carousel qui va prendre la totalité de la page avant de scroller-->
+
     <div class="carousel">
         <div class="mySlides"></div>
         <div class="mySlides"></div>
         <div class="mySlides"></div>
     </div>
 
+    <!--En dessous du carousel, des informations concernant l'entreprise BBC-->
+    <div class="informations">
+        <div class="titre-info">
+            <h1>Achat et vente de véhicules d'occasion</h1>
+        </div>
+        <div class="bienvenu">
+            <p>Bienvenu chez Bye Buy Car Lille</p>
+        </div>
+        <div class="raison">
+            <h2>Trois bonnes raisons de faire appel à nos agents auto-mobiles</h2>
+        </div>
+        <div class="row">
+            <div class="feature1">
+                <div class="icon1">
+                    <img src="/Image/ribbon-badge.png" alt="icon rubban" width="30" height="30">
+                </div>
+                <div class="text1">
+                    <p>Nos conseillers connaissent le marché de l’automobile sur le bout des doigts. Ils sauront vous
+                        guider pour favoriser une vente ou un achat rapide au meilleur prix. Faites confiance à la
+                        première communauté d’agents automobiles de France !</p>
+                </div>
+            </div>
+            <div class="feature2">
+                <div class="icon2">
+                    <img src="/Image/icons8-lock-50.png" alt="icon cadena" width="30" height="30">
+                </div>
+                <div class="text2">
+                    Valorisation et estimation du véhicule, mise en relation du vendeur et de l’acheteur, signature du
+                    compromis de vente, garanties, financement, paiement : Bye Buy Car sécurise le processus de mise en
+                    vente de tous les véhicules qui lui sont confiés !
+                </div>
+            </div>
+            <div class="feature3">
+                <div class="icon3">
+                    <img src="/Image/icons8-speedometer-48.png" alt="icon speedometer" width="30" height="30">
+                </div>
+                <div class="text3">
+                    <p>Pour une visibilité optimale, Bye Buy Car se charge de diffuser l’annonce sur son site internet
+                        national ainsi que sur toutes les meilleures plateformes en ligne (Leboncoin, ParuVendu,
+                        Zoomcar..). Transaction rapide et efficace garantie !
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
 
 </body>
 
-<script src="/JS/script.js"></script>
+<script src="../Assets/JS/script.js"></script>
 
 </html>
