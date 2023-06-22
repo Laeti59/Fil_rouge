@@ -1,166 +1,176 @@
-.header{
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header {
     background: rgba(50, 50, 50, 0.35);
-    padding: 30px;
-    margin-top: -8px;
+    height: 130px;
+    /* margin-top: -8px;
     margin-left: -8px;
-    margin-right: -8px;
-    backdrop-filter: blur(150px);
+    margin-right: -8px; */
+    backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     z-index: 2;
-    position: relative;
+    position: absolute;
 }
 
 
 /* Mise en forme des coordonées en haut de la page avec leur logo. */
 .coordonnées-haut {
     display: flex;
-    color: white; 
+    color: white;
 }
 
-.adresse{
+.adresse {
     margin-left: 350px;
+    margin-top: 15px;
 }
 
-.fa-envelope{
+.fa-envelope {
     color: red;
 }
 
-.mail{
+.mail {
     display: inline;
     margin-left: 20px;
     text-decoration: none;
-    color:white;
-    font-size: 18px;
+    color: white;
+    font-size: 16.5px;
 }
 
-.fa-phone{
+.fa-phone {
     color: red;
 }
 
-.telephone{
+.telephone {
     margin-left: 750px;
+    /* margin-top: 15px; */
 }
 
-.numero{
+.numero {
     display: inline;
     margin-left: 20px;
     text-decoration: none;
-    color:white;
-    font-size: 18px;
+    color: white;
+    font-size: 16.5px;
 }
 
-.logo{
+.logo {
     margin-left: 50px;
-    size: 20px;
+    size: 18px;
+    margin-top: 15px;
 }
 
-.fa-facebook{
+.fa-facebook {
     margin-right: 15px;
     color: white;
 }
 
-.fa-square-instagram{
+.fa-square-instagram {
     color: white;
 }
 
 /* Mise en place du logo et de la barre de navigation */
 /* Logo BBC*/
 
-.info{
+.info {
     display: inline;
 }
 
-.logo-bbc{
+.logo-bbc {
     display: flex;
-    margin-left: 300px;
-    margin-top: 20px;
+    margin-left: 150px;
+    margin-top: 10px;
 }
 
-.titre{
+.titre {
     display: flex;
     margin-left: -18px;
+    /* margin-top: 10px; */
 }
 
-.titre-logo{
+.titre-logo {
     color: white;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
-.separation{
+.separation {
     color: #B0E3FB;
     margin-top: 19px;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .logo-bbc p {
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
 /* Barre de Nagivation*/
 
 
 
-.info a, .info p{
+.info a,
+.info p {
     text-decoration: none;
     color: white;
 }
 
-.info a{
-    font-size: 18px;
+.info a {
+    font-size: 16.5px;
 }
 
-.lien-vendeur{
+.lien-vendeur {
     display: flex;
     justify-content: center;
     margin-left: -380px;
-    margin-top: -60px;
+    margin-top: -40px;
+    font-size: 16.5px;
 }
 
-.menu-deroulant{
+.menu-deroulant {
     display: flex;
     justify-content: center;
     margin-left: 180px;
     margin-top: -20px;
 }
 
-.logo-home{
+.logo-home {
     display: flex;
     justify-content: center;
-    margin-left: 850px;
-    margin-top: -20px;
+    margin-left: 900px;
+    margin-top: -15px;
 }
 
-.lien-acheteur{
+.lien-acheteur {
     display: flex;
     justify-content: center;
-    margin-left: 600px;
-    margin-top: -35px;
+    margin-left: 650px;
+    margin-top: -25px;
 }
 
-.connection{
+.connection {
     display: flex;
     justify-content: center;
-    margin-left: 1080px;
-    margin-top: -40px;
+    margin-left: 1150px;
+    margin-top: -45px;
 }
 
 .message-connection {
     display: flex;
     justify-content: center;
-    margin-left: 1080px;
+    margin-left: 1150px;
 }
 
 
 /* Carousel*/
 .carousel {
-    /* position: relative; */
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     z-index: 1;
     overflow: hidden;
+    /* margin-top: -300px; */
 }
 
 .mySlides {
@@ -168,23 +178,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
-.mySlides:nth-child(1){
-    background-image: url(/Image/MAZDA\ CX\ 5.jpg);
+.mySlides:nth-child(1) {
     background-size: cover;
     background-position: center;
 }
 
-.mySlides:nth-child(2){
-    background-image: url(/Image/Citroën\ C3\ AIRCROSS\ SHINE.jpg);
+.mySlides:nth-child(2) {
     background-size: cover;
     background-position: center;
 }
 
-.mySlides:nth-child(3){
-    background-image: url(/Image/KIA\ SPORTAGE\ 7\ CRDI.jpg);
+.mySlides:nth-child(3) {
     background-size: cover;
     background-position: center;
 }
@@ -192,15 +199,230 @@
 
 /* Informations concernant l'entreprise*/
 
+.welcome {
+    /* margin-top: 100px; */
+}
+
+.achat {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bienvenu{
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+.nom-societe{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+.separteur{
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid #C51919;
+    width: 15%;
+}
+
+.separteur-2{
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+    border-bottom: 1px solid #C51919;
+    width: 10%;
+}
+
+.titre-2{
+    font-weight: 100;
+    line-height: 70px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+
 .informations{
-    margin-top: 1010px;
+    display: flex;
+    justify-content: center;
 }
 
 .row{
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    float: left;
+    width: 30%;
+    margin-left: 40px;
 }
 
-.feature1{
+.col{
+    flex-basis: 30%;
+    max-width: 100%;
+}
+
+.feature{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    color: #999999;
+}
+
+.titre-3{
+    font-style: normal;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.row-2{
+    display: inline-block;
+    text-align: center;
+}
+
+.call{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-2 a{
+    display: block;
+    text-decoration: none;
+    color: #C51919;
+    font-size: 28px;
+}
+
+.numero{
+    display: flex;
+    margin-top: 20px;
+}
+
+.question{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Les offres de BBC*/
+
+.proposition-vehicule{
+    display: flex;
+    justify-content: center;
+}
+
+.les-blocs .bloc-1,
+.les-blocs .bloc-2,
+.les-blocs .bloc-3,
+.les-blocs .bloc-4 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.les-blocs{
+    text-align: center;
+}
+
+.decouvrir{
     
 }
+
+
+
+
+
+
+
+/* .welcome{
+    overflow: hidden;
+    position: absolute;
+}
+
+.object{
+    z-index: 1;
+}
+
+.bloc{
+    background: #ffffff;
+}
+
+.page-section{
+    padding: 80px 0;
+} */
+
+/* .car-left {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    z-index:-1;
+}
+
+.car-left .left .object-1{
+    left: -400px;
+}
+
+.car-left .object-1{
+    position:absolute;
+    bottom: 0;
+}
+
+.voiture-gauche{
+    max-width: 100%;
+    height: auto;
+}
+
+.car-right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.car-right .right .object-2{
+    right: -400px;
+}
+
+.car-right .object-2{
+    position: absolute;
+    bottom: 0;
+}
+
+.voiture-droite{
+    max-width: 100%;
+    height: auto;
+}
+
+.voiture-droite, .voiture-gauche{
+    vertical-align: middle;
+    overflow-clip-margin: contente-box;
+    overflow: clip;
+}
+
+
+*, ::after, ::before{
+    box-sizing: border-box;
+} */
