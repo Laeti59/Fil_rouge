@@ -246,43 +246,17 @@ input{
     height: 320px;
 }
 
-.adresse-boite{
-    margin-left: 20px;
-}
-
-.tel-boite{
-    margin-bottom: 15px;
-    margin-left: 20px;
-}
-
-.numero-boite{
-    text-decoration: none;
-    color: #000000;
-}
-
-.mail-boite{
-    margin-left: 20px;
-}
-
-.email-boite{
-    text-decoration: none;
-    color: #000000;
-}
-
-.titre-horaire{
-    font-size: 18px;
-    margin-top: 30px;
+.titre-list{
     text-align: center;
-    text-decoration: underline;
-}
-
-.les-horaires {
-    display: flex;
-    justify-content: center;
-    margin-right: 30px;
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 40px;
 }
 
 
+.list-doc li{
+    margin-top: 20px;
+}
 
 /* Footer*/
 
@@ -358,7 +332,6 @@ p.logo-bbc-footer  {
     width: 100%;
     height: 150px;
 }
-
 
 .adresse-footer {
     display: flex;
