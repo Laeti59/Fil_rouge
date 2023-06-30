@@ -1,0 +1,283 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background: rgba(50, 50, 50, 0.35);
+    height: 130px; 
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    /* backdrop-filter: blur(15px); */
+    border-bottom: 1px solid rgba(50, 50, 50, 0.26);
+}
+
+
+/* Mise en forme des coordonées en haut de la page avec leur logo. */
+.coordonnées-haut {
+    display: flex;
+    color: white;
+}
+
+.adresse {
+    margin-left: 350px;
+    margin-top: 15px;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.mail {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16.5px;
+}
+
+.fa-phone {
+    color: #ff0000;
+}
+
+.telephone {
+    margin-left: 750px;
+    margin-top: 15px;
+}
+
+.numero {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16.5px;
+}
+
+.logo {
+    margin-left: 50px;
+    size: 18px;
+    margin-top: 10px;
+}
+
+.facebook{
+    margin-right: 3px;
+}
+
+.instagram{
+    margin-left: 3px;
+}
+
+
+
+/* Mise en place du logo et de la barre de navigation */
+/* Logo BBC*/
+
+.info {
+    display: inline;
+}
+
+.logo-bbc {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.titre {
+    display: flex;
+    margin-left: -18px;
+    /* margin-top: 10px; */
+}
+
+.titre-logo {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.separation {
+    color: #B0E3FB;
+    margin-top: 19px;
+    font-size: 30px;
+}
+
+.logo-bbc p {
+    margin-left: 5px;
+}
+
+/* Barre de Nagivation*/
+
+
+
+.info a,
+.info p {
+    text-decoration: none;
+    color: white;
+}
+
+.info a {
+    font-size: 16.5px;
+}
+
+.lien-vendeur {
+    display: flex;
+    justify-content: center;
+    margin-left: -380px;
+    margin-top: -50px;
+    font-size: 16.5px;
+}
+
+.menu-deroulant {
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    margin-top: -20px;
+}
+
+.logo-home {
+    display: flex;
+    justify-content: center;
+    margin-left: 930px;
+    margin-top: -15px;
+}
+
+.lien-acheteur {
+    display: flex;
+    justify-content: center;
+    margin-left: 650px;
+    margin-top: -25px;
+}
+
+.connection {
+    display: flex;
+    justify-content: center;
+    margin-left: 1150px;
+    margin-top: -45px;
+}
+
+.message-connection {
+    display: flex;
+    justify-content: center;
+    margin-left: 1150px;
+}
+
+.fa-user{ 
+    color: white;
+}
+
+.fa-house{
+    color: white;
+}
+
+.fa-angle-down{
+    color: white;
+}
+
+/* Footer*/
+
+footer{
+    margin-top: 60px;
+    background: rgba(50, 50, 50, 0.35);
+    height: 400px; 
+    margin-left: -8px;
+    margin-right: -8px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.26);
+    position: absolute;
+    bottom: -400px ;
+    width: 100%;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 350px;
+}
+
+.coordonnees-footer{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+} 
+
+p.nos-coordonnees{
+    color: white;
+    font-size: 24px;
+} 
+
+/* Logo */
+
+.info-footer{
+    display: inline;
+}
+
+.logo-bbc-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: -18px;
+    /* margin-top: 10px; */
+}
+
+.titre-logo-footer {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.separation-footer {
+    color: #B0E3FB;
+    margin-top: 19px;
+    font-size: 30px;
+}
+
+p.logo-bbc-footer  {
+    margin-left: 5px;
+}
+
+
+/* Coordonnées footer*/
+
+.entreprise-footer{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+
+.adresse-footer {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.logo-adresse-footer{
+    margin-right: 20px;
+}
+
+.text-adresse{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+.tel-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.text-tel{
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+.le-mail{
+    display: flex;
+    justify-content: center;
+}
+
+
+.text-mail{
+    margin-right: 30px;
+}
