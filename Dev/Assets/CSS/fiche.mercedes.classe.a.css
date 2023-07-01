@@ -8,7 +8,6 @@
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
-    /* backdrop-filter: blur(15px); */
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
 }
 
@@ -83,7 +82,6 @@
 .titre {
     display: flex;
     margin-left: -18px;
-    /* margin-top: 10px; */
 }
 
 .titre-logo {
@@ -103,8 +101,6 @@
 }
 
 /* Barre de Nagivation*/
-
-
 
 .info a,
 .info p {
@@ -171,58 +167,122 @@
     color: white;
 }
 
+/* Section One*/
 
-/* Mise en place nom et prénom du conseillé et du client*/
-
-.contact {
-    margin-top: 40px;
-    margin-left: 150px;
+.section-one{
+    width: 20%;
 }
 
-.client {
-    margin-top: -40px;
+.presentation-produit{
+    margin-left: 50px;
+}
+
+.titre{
     display: flex;
-    justify-content: right;
-    margin-right: 200px;
+    justify-content: center;
 }
 
-
-
-/* Mise en place des rubriques*/
-
-.BoxOne{
-    margin-top: 100px;
-    display: block;
-    width: 8%;
-    border-right: 1px solid #B8B8B8;
-} 
-
-.vehicule{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;;
-    cursor: pointer;
+.h3-titre{
+    font-size: 35px;
 }
 
-.mandat{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
+/* Le carousel*/
+
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 350px;
+    height: 1000px; */
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
 
-.messagerie{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;;
-    cursor: pointer;
-} 
+.mySlides:nth-child(1) {
+    background-size: cover;
+    background-position: center;
+}
 
+.mySlides:nth-child(2) {
+    background-size: cover;
+    background-position: center;
+}
 
+.mySlides:nth-child(3) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(5) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(6) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(7) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(8) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(9) {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section Two*/
+
+.section-two{
+    width: 30%;
+    display: flex;
+    margin: auto;
+    padding-right: 350px;
+    margin-top: -55px;
+}
+
+.titre-description{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.descp{
+    padding-right: 180px;
+}
+
+/* Le contenu*/
+
+.button-360{
+    background-color: #EE1F51;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo-tel{
+    display: inline;
+    justify-content: space-evenly;
+}
 /* Footer*/
 
 footer {
@@ -232,7 +292,7 @@ footer {
     margin-left: -8px;
     margin-right: -8px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
-    position: absolute;
+    /* position: absolute; */
     bottom: -100px;
     width: 100%;
 }

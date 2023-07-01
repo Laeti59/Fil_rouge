@@ -87,7 +87,7 @@ class vehicule {
         modal.style.paddingLeft = "30px";
         modal.style.paddingTop = "30px";
 
-        const modalContent = document.createElement('div');
+        let modalContent = document.createElement('div');
         modalContent.classList.add('modal-content');
 
         /* Element dans la modal*/
@@ -99,7 +99,7 @@ class vehicule {
         titre.style.fontSize = "24px";
         titre.style.textDecoration = "Underline";
         modalContent.appendChild(titre);
-        
+
         /* L'image du véhicule*/
 
         let image = document.createElement("img");
@@ -163,8 +163,10 @@ class vehicule {
 
         modal.appendChild(modalContent);
 
+        this.parentElement.parentElement.currentModal = modal;
+
         this.parentElement.appendChild(modal);
-}
+    }
 };
 
 
@@ -181,6 +183,111 @@ class mandat {
         boite2.textContent = this.name;
         boite2.classList.add('mandat');
         this.parentElement.appendChild(boite2);
+    }
+
+    openModalMandat() {
+        if (this.parentElement.parentElement.currentModal) {
+            this.parentElement.parentElement.currentModal.remove();
+        }
+
+        const modalMandat = document.createElement('div');
+        modalMandat.classList.add('modalMandat');
+        modalMandat.style.backgroundColor = "#ecf0f1";
+        modalMandat.style.width = "1200px";
+        modalMandat.style.height = "350px";
+        modalMandat.style.marginTop = "-300px";
+        modalMandat.style.marginLeft = "270px";
+        modalMandat.style.border = "1px solid #B8B8B8";
+        modalMandat.style.paddingLeft = "30px";
+        modalMandat.style.paddingTop = "30px";
+
+        let modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+        /* Le titre*/
+
+        let titre = document.createElement('p');
+        titre.textContent = "Mon Véhicule";
+        titre.style.fontSize = "24px";
+        titre.style.textDecoration = "Underline";
+        modalContent.appendChild(titre);
+
+        let image = document.createElement("img");
+        image.src = "../Assets/Voiture/Opel Zafira/photo.jpg";
+        image.style.width = "250px";
+        image.style.width = "220px";
+        image.style.marginTop = "20px";
+        modalContent.appendChild(image);
+
+        /* La marque*/
+
+        let marque = document.createElement('p');
+        marque.textContent = "Opel";
+        marque.style.fontSize = "18px";
+        marque.style.marginLeft = "250px";
+        modalContent.appendChild(marque);
+
+        /* Le modèle*/
+
+        let modele = document.createElement('p');
+        modele.textContent = "Zarifa";
+        modele.style.fontSize = "18px";
+        modele.style.marginLeft = "250px";
+        modalContent.appendChild(modele);
+
+        // function drawCircle() {
+        //     const canvas = document.createElement('canvas');
+        //     canvas.width = 200;
+        //     canvas.height = 200;
+        //     canvas.color = "green";
+        //     document.body.appendChild(canvas);
+
+        //     const context = canvas.getContext('2d');
+        //     context.beginPath();
+        //     context.lineWidth = "2";
+        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
+        //     context.stroke();
+        // }
+
+        // drawCircle();
+
+        // function drawCircle2() {
+        //     const canvas = document.createElement('canvas');
+        //     canvas.style.width = 200;
+        //     canvas.style.height = 200;
+        //     canvas.style.backgroundColor = "grey";
+        //     document.body.appendChild(canvas);
+
+        //     const context = canvas.getContext('2d');
+        //     context.beginPath();
+        //     context.lineWidth = "2";
+        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
+        //     context.stroke();
+        // }
+
+        // drawCircle2();
+
+        // function drawCircle3() {
+        //     const canvas = document.createElement('canvas');
+        //     canvas.width = 200;
+        //     canvas.height = 200;
+        //     canvas.color = "grey";
+        //     document.body.appendChild(canvas);
+
+        //     const context = canvas.getContext('2d');
+        //     context.beginPath();
+        //     context.lineWidth = "2";
+        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
+        //     context.stroke();
+        // }
+
+        // drawCircle3();
+
+        modalMandat.appendChild(modalContent);
+
+        this.parentElement.parentElement.currentModal = modalMandat;
+
+        this.parentElement.appendChild(modalMandat);
     }
 }
 
@@ -199,6 +306,36 @@ class messagerie {
         boite3.classList.add('messagerie');
         this.parentElement.appendChild(boite3);
     }
+
+
+    openModalMessagerie() {
+
+        if (this.parentElement.parentElement.currentModal) {
+            this.parentElement.parentElement.currentModal.remove();
+        }
+
+        const modalMessagerie = document.createElement('div');
+        modalMessagerie.classList.add('modalMessagerie');
+        modal.style.backgroundColor = "#ecf0f1";
+        modal.style.width = "1200px";
+        modal.style.height = "350px";
+        modal.style.marginTop = "-300px";
+        modal.style.marginLeft = "270px";
+        modal.style.border = "1px solid #B8B8B8";
+        modal.style.paddingLeft = "30px";
+        modal.style.paddingTop = "30px";
+
+        let modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+
+        modalMessagerie.appendChild(modalContent);
+
+        this.parentElement.parentElement.currentModal = modalMessagerie;
+
+        this.parentElement.appendChild(modalMessagerie);
+
+    }
 }
 
 
@@ -208,10 +345,9 @@ document.addEventListener('DOMContentLoaded', () => {
     boxOneInstance.mandatInstance.displayText();
     boxOneInstance.messagerieInstance.displayText();;
     boxOneInstance.boxOneInstance.openModalVehicule();
+    boxOneInstance.boxOneInstance.openModalMandat();
+    boxOneInstance.boxOneInstance.openModalMessagerie();
 });
-
-
-
 /* Pop-up véhicule*/
 
 
