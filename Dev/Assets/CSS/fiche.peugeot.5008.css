@@ -1,0 +1,490 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: rgba(50, 50, 50, 0.35);
+    height: 130px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.26);
+}
+
+
+/* Mise en forme des coordonées en haut de la page avec leur logo. */
+.coordonnées-haut {
+    display: flex;
+    color: white;
+}
+
+.adresse {
+    margin-left: 350px;
+    margin-top: 15px;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.mail {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16.5px;
+}
+
+.fa-phone {
+    color: #ff0000;
+}
+
+.telephone {
+    margin-left: 750px;
+    margin-top: 15px;
+}
+
+.numero {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16.5px;
+}
+
+.logo {
+    margin-left: 50px;
+    size: 18px;
+    margin-top: 10px;
+}
+
+.facebook {
+    margin-right: 3px;
+}
+
+.instagram {
+    margin-left: 3px;
+}
+
+
+
+/* Mise en place du logo et de la barre de navigation */
+/* Logo BBC*/
+
+.info {
+    display: inline;
+}
+
+.logo-bbc {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.titre {
+    display: flex;
+    margin-left: -18px;
+}
+
+.titre-logo {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.separation {
+    color: #B0E3FB;
+    margin-top: 19px;
+    font-size: 30px;
+}
+
+.logo-bbc p {
+    margin-left: 5px;
+}
+
+/* Barre de Nagivation*/
+
+.info a,
+.info p {
+    text-decoration: none;
+    color: white;
+}
+
+.info a {
+    font-size: 16.5px;
+}
+
+.lien-vendeur {
+    display: flex;
+    justify-content: center;
+    margin-left: -380px;
+    margin-top: -50px;
+    font-size: 16.5px;
+}
+
+.menu-deroulant {
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    margin-top: -20px;
+}
+
+.logo-home {
+    display: flex;
+    justify-content: center;
+    margin-left: 930px;
+    margin-top: -15px;
+}
+
+.lien-acheteur {
+    display: flex;
+    justify-content: center;
+    margin-left: 650px;
+    margin-top: -25px;
+}
+
+.connection {
+    display: flex;
+    justify-content: center;
+    margin-left: 1150px;
+    margin-top: -45px;
+}
+
+.message-connection {
+    display: flex;
+    justify-content: center;
+    margin-left: 1150px;
+}
+
+.fa-user {
+    color: white;
+}
+
+.fa-house {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-angle-down {
+    color: white;
+}
+
+/* Section One*/
+
+.section-one{
+    width: 20%;
+}
+
+.presentation-produit{
+    margin-left: 50px;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+
+.h3-titre{
+    font-size: 35px;
+}
+
+/* Le carousel*/
+
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 350px;
+    height: 1000px; */
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mySlides:nth-child(1) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(2) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(3) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(5) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(6) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(7) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(8) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(9) {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section Two*/
+
+.section-two{
+    width: 30%;
+    display: flex;
+    margin: auto;
+    padding-right: 350px;
+    margin-top: -55px;
+}
+
+.titre-description{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.descp{
+    padding-right: 180px;
+}
+
+/* Le contenu*/
+
+.button-360{
+    background-color: #EE1F51;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.logo-tel{
+    display: inline;
+}
+
+.numero-tel{
+    color: black;
+    text-decoration: none;
+}
+
+.BBC-section{
+    font-size: 14px;
+    margin-left: 70px;
+    font-style: italic;
+}
+
+.logo-tel a {
+    margin-top: -20px;
+}
+
+
+/* Les options*/
+
+.section-three{
+    width: 60%;
+    margin-top: 60px;
+}
+
+.bloc{
+    content: "";
+    display: table;
+    clear: 0 10px;
+    border: 1px solid #B8B8B8;
+    background-color: #dcdde1;
+    margin-left: 50px;
+}
+
+.titre-bloc{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+div .liste-1,
+div .liste-2{
+    float: left;
+    height: 300px;
+    padding: 0 10px;
+}
+
+.liste-2{
+    margin-left: 60px;
+}
+
+
+/* Le formulaire*/
+
+.formulaire{
+    width: 30%;
+    float: right;
+    margin-top: -790px;
+    margin-right: 200px;
+}
+
+.bloc-form{
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc-form-contenu{
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.bloc-form-contenu input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.bloc-form-contenu textarea{
+    height: 80px;
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.button-envoyer{
+    width: 120px;
+    background-color: #EE1F51;
+    border: 1px solid #B8B8B8;
+}
+
+
+
+/* Footer*/
+
+footer {
+    margin-top: 60px;
+    background: rgba(50, 50, 50, 0.35);
+    height: 300px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.26);
+    position: absolute;
+    bottom: -400px;
+    width: 100%;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 350px;
+}
+
+.coordonnees-footer {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: -160px;
+}
+
+p.nos-coordonnees {
+    color: white;
+    font-size: 26px;
+}
+
+/* Logo */
+
+.info-footer {
+    display: inline;
+}
+
+.logo-bbc-footer {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.titre-footer {
+    display: flex;
+    margin-left: -18px;
+    /* margin-top: 10px; */
+}
+
+.titre-logo-footer {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.separation-footer {
+    color: #B0E3FB;
+    margin-top: 19px;
+    font-size: 30px;
+}
+
+p.logo-bbc-footer {
+    margin-left: 5px;
+}
+
+
+/* Coordonnées footer*/
+
+.entreprise-footer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+
+.adresse-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-adresse-footer {
+    margin-right: 20px;
+}
+
+.text-adresse {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+.tel-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.text-tel {
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+.le-mail {
+    display: flex;
+    justify-content: center;
+}
+
+
+.text-mail {
+    margin-right: 30px;
+}
