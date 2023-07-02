@@ -275,14 +275,105 @@
 .button-360{
     background-color: #EE1F51;
     border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
 }
 
 .logo-tel{
     display: inline;
-    justify-content: space-evenly;
 }
+
+.numero-tel{
+    color: black;
+    text-decoration: none;
+}
+
+.BBC-section{
+    font-size: 14px;
+    margin-left: 70px;
+    font-style: italic;
+}
+
+.logo-tel a {
+    margin-top: -20px;
+}
+
+
+/* Les options*/
+
+.section-three{
+    width: 50%;
+    margin-top: 60px;
+}
+
+.bloc{
+    content: "";
+    display: table;
+    clear: 0 10px;
+    border: 1px solid #B8B8B8;
+    background-color: #dcdde1;
+    margin-left: 50px;
+}
+
+.titre-bloc{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+div .liste-1,
+div .liste-2{
+    float: left;
+    height: 400px;
+    padding: 0 10px;
+}
+
+.liste-2{
+    margin-left: 60px;
+}
+
+
+/* Le formulaire*/
+
+.formulaire{
+    width: 30%;
+    float: right;
+    margin-top: -890px;
+    margin-right: 200px;
+}
+
+.bloc-form{
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc-form-contenu{
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.bloc-form-contenu input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.bloc-form-contenu textarea{
+    height: 80px;
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.button-envoyer{
+    width: 120px;
+    background-color: #EE1F51;
+    border: 1px solid #B8B8B8;
+}
+
+
+
 /* Footer*/
 
 footer {
@@ -292,8 +383,8 @@ footer {
     margin-left: -8px;
     margin-right: -8px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
-    /* position: absolute; */
-    bottom: -100px;
+    position: absolute;
+    bottom: -500px;
     width: 100%;
 }
 

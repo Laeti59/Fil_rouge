@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dce549eaed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Assets/CSS/fiche-peugeot-5008.css">
+    <link rel="stylesheet" href="../Assets/CSS/fiche.mercedes.classe.a.css">
     <title>Mercedes Classe A</title>
 </head>
 
@@ -109,23 +109,29 @@
         <div class="description">
             <div class="titre-description">
                 <h2 class="descp">Description</h2>
-                <h2>21 990€</h2>
+                <h2>Prix : 21 990€</h2>
             </div>
             <div class="contenu">
                 <div class="les-infos">
                     <div class="lien-vue">
                         <input class="button-360" type="button" value="Voir la vue 360°">
                     </div>
-                    <p class="annee">Année : 2017<p>
-                    <p class="kilometre">kilométrage : 93 000KM<p>
-                    <p class="couleur">Couleur extérieur : Bleu Foncé<p>
-                    <p class="energie">Carbutant : Dièsel<p>
-                    <p class="transmission">Transmission : Manuelle 6 vitesses<p>
+                    <p class="annee">Année : 2017
+                    <p>
+                    <p class="kilometre">kilométrage : 93 000KM
+                    <p>
+                    <p class="couleur">Couleur extérieur : Bleu Foncé
+                    <p>
+                    <p class="energie">Carbutant : Dièsel
+                    <p>
+                    <p class="transmission">Transmission : Manuelle 6 vitesses
+                    <p>
                     <div class="logo-tel">
                         <img src="../Assets/Image/icons8-phone-64.png" alt="Icone Téléphone" width="30" height="30">
-                        <p class="numero-tel">06.51.53.65.32<p>
+                        <a class="numero-tel" href="tel:+06.51.53.65.32">06.51.53.65.32</a>
                     </div>
-                    <p class="BBC-section">Bye Buy Car Lille<p>
+                    <p class="BBC-section">Bye Buy Car Lille
+                    <p>
                 </div>
             </div>
         </div>
@@ -136,7 +142,7 @@
 
         <div class="bloc">
             <div class="titre-bloc">
-                <h2>Options :</h2>
+                <h2>Les options :</h2>
             </div>
             <div class="liste-1">
                 <ul>
@@ -191,16 +197,20 @@
         </div>
     </section>
 
-    <form action="" method="get"> <!---Mettre le lien back-->
+    <form class="formulaire" action="" method="get"> <!---Mettre le lien back-->
 
-        <div class="titre-form">
-            <h2>Nous contacter à propos de ce véhicule</h2>
+        <div class="bloc-form">
+            <div class="titre-form">
+                <h2>Nous contacter à propos de ce véhicule</h2>
+            </div>
+
+            <div class="bloc-form-contenu">
+                <input type="text" id="nom" placeholder="Nom">
+                <input type="text" id="email" placeholder="Email">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input class="button-envoyer" type="submit" placeholder="Envoyer">
+            </div>
         </div>
-
-        <input type="text" id="nom" placeholder="Nom">
-        <input type="text" id="email" placeholder="Email">
-        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <input type="submit" placeholder="Envoyer">
 
     </form>
 
@@ -282,7 +292,7 @@
 
     </footer>
 
-    <script src="../Assets/JS/fiche-peugeot-5008.js"></script>
+    <script src="../Assets/JS/fiche.mercedes.classe.a.js"></script>
 </body>
 
 </html>
