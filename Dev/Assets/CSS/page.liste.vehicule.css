@@ -172,57 +172,189 @@
 }
 
 
-/* Mise en place nom et prénom du conseillé et du client*/
+/* Bloc Recherche Avancée*/
 
-.contact {
-    margin-top: 40px;
-    margin-left: 150px;
+.bloc-recherche{
+    width: 10%;
+    background-color: #F9F7F4;
+    height: 450px;
+    border: 1px solid #b8b8b8;
+    display: inline-block;
 }
 
-.client {
-    margin-top: -40px;
-    display: flex;
-    justify-content: right;
-    margin-right: 200px;
+.bloc-1{
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 15px;
+    padding-left: 15px;
 }
 
-
-
-/* Mise en place des rubriques*/
-
-.BoxOne{
-    margin-top: 100px;
-    display: block;
-    width: 8%;
-    border-right: 1px solid #B8B8B8;
-    height: 218px;
-} 
-
-.vehicule{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
+.titre-recherche h3{
+    font-size: 16px;
 }
 
-.mandat{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
+.ligne{
+    border: none;
+    border-top: 1px solid #EE1F51;
+    width: 25%;
+    margin: 10px 0;
 }
 
+.bloc-2{
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
 
-.messagerie{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
-} 
+.prix h4{
+    font-size: 14px;
+}
 
+.bloc-3{
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.annee h4{
+    font-size: 14px;
+}
+
+.marque p,
+.type p,
+.carburant p,
+.couleur p,
+.transmission p,
+.kilometrage p {
+    display: inline-block;  
+    vertical-align: middle; 
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.marque img,
+.type img,
+.carburant img,
+.couleur img,
+.transmission img,
+.kilometrage img {
+    vertical-align: middle;
+    float: right; 
+    margin-top: 10px;
+    padding-right: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.encart-droite{
+    width: 10%;
+    height: 40px;
+    background-color: #F9F7F4;
+    border: 1px solid #b8b8b8;
+    float: right;
+}
+
+.trier p {
+    font-size: 14px;
+    display: inline-block;  
+    vertical-align: middle; 
+    padding-left: 10px;
+}
+
+.trier img {
+    vertical-align: middle;
+    float: right; 
+    margin-top: 10px;
+    padding-right: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.contenu-central{
+    text-align: center;
+}
+
+/* Première boite*/
+.contenu-1{
+    width: 13.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -350px;
+}
+
+.info-contenu .ligne{
+    margin: auto;
+}
+
+#ligne-haut{
+    width: 15%;
+    padding-bottom: 15px;
+}
+
+#ligne-bas{
+    width: 35%;
+}
+
+.prix,
+.kilometrage{
+    font-size: 18px;
+}
+
+.annee, 
+.carburant,
+.transmission{
+    display: inline;
+}
+.annee{
+    float: left;
+    margin-top: 0px;
+}
+
+.carburant{
+    float: right;
+    margin-top: 0px;
+}
+
+/*Deuxième boite*/
+
+.contenu-2{
+    width: 13.5%;
+    margin-left: auto;
+    margin-right: 350px;
+    margin-top: -350px;
+}
+
+.info-contenu-2 .ligne{
+    margin: auto;
+}
+
+#ligne-haut-2{
+    width: 15%;
+    padding-bottom: 15px;
+}
+
+#ligne-bas-2{
+    width: 35%;
+}
+
+.prix-2,
+.kilometrage-2{
+    font-size: 18px;
+}
+
+.annee-2, 
+.carburant-2,
+.transmission-2{
+    display: inline;
+}
+.annee-2{
+    float: left;
+    margin-top: 0px;
+}
+
+.carburant-2{
+    float: right;
+    margin-top: 0px;
+}
 
 /* Footer*/
 

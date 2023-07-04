@@ -52,6 +52,8 @@ class BoxOne {
         this.boxOneInstance = new vehicule(boxOne);
         this.mandatInstance = new mandat(boxOne);
         this.messagerieInstance = new messagerie(boxOne);
+
+        // this.boxOneInstance.displayText();
     }
 }
 
@@ -62,6 +64,7 @@ class vehicule {
     constructor(parentElement) {
         this.name = "Mes véhicules";
         this.parentElement = parentElement;
+        this.element = null;
     }
 
     displayText() {
@@ -69,18 +72,24 @@ class vehicule {
         boite1.textContent = this.name;
         boite1.classList.add('vehicule');
         this.parentElement.appendChild(boite1);
+        this.element = boite1;
+        this.element.addEventListener('click', this.openModalVehicule.bind(this));
     }
 
     /* Création de la modal*/
 
     openModalVehicule() {
 
+        if (this.parentElement.parentElement.currentModal) {
+            return; // Sortir de la méthode si la modal existe déjà
+        }
+
         /* La modal*/
         const modal = document.createElement('div');
         modal.classList.add('modal');
         modal.style.backgroundColor = "#ecf0f1";
         modal.style.width = "1200px";
-        modal.style.height = "350px";
+        modal.style.paddingBlock = "40px"
         modal.style.marginTop = "-300px";
         modal.style.marginLeft = "270px";
         modal.style.border = "1px solid #B8B8B8";
@@ -172,10 +181,17 @@ class vehicule {
 
 /* Rubrique Mandat*/
 
+let canvas = document.createElement('canvas');
+        
+        document.body.appendChild(canvas);
+
+        let context = canvas.getContext('2d');
+
 class mandat {
     constructor(parentElement) {
         this.name = "Mandat";
         this.parentElement = parentElement;
+        this.element = null;
     }
 
     displayText() {
@@ -183,9 +199,16 @@ class mandat {
         boite2.textContent = this.name;
         boite2.classList.add('mandat');
         this.parentElement.appendChild(boite2);
+        this.element = boite2;
+        this.element.addEventListener('click', this.openModalMandat.bind(this));
     }
 
     openModalMandat() {
+
+        if (this.parentElement.parentElement.modal) {
+            return;
+        }
+
         if (this.parentElement.parentElement.currentModal) {
             this.parentElement.parentElement.currentModal.remove();
         }
@@ -235,53 +258,41 @@ class mandat {
         modele.style.marginLeft = "250px";
         modalContent.appendChild(modele);
 
-        // function drawCircle() {
-        //     const canvas = document.createElement('canvas');
-        //     canvas.width = 200;
-        //     canvas.height = 200;
-        //     canvas.color = "green";
-        //     document.body.appendChild(canvas);
+        
+        
+        context.beginPath();
+        context.lineWidth = "2";
+        context.arc(100, 100, 35, 0, 2 * Math.PI);
+        context.stroke();
+        
 
-        //     const context = canvas.getContext('2d');
-        //     context.beginPath();
-        //     context.lineWidth = "2";
-        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
-        //     context.stroke();
-        // }
+        
 
-        // drawCircle();
+        function drawCircle2() {
+            const canvas = document.createElement('canvas');
+            document.body.appendChild(canvas);
 
-        // function drawCircle2() {
-        //     const canvas = document.createElement('canvas');
-        //     canvas.style.width = 200;
-        //     canvas.style.height = 200;
-        //     canvas.style.backgroundColor = "grey";
-        //     document.body.appendChild(canvas);
+            const context = canvas.getContext('2d');
+            context.beginPath();
+            context.lineWidth = "2";
+            context.arc(100, 100, 35, 0, 2 * Math.PI);
+            context.stroke();
+        }
 
-        //     const context = canvas.getContext('2d');
-        //     context.beginPath();
-        //     context.lineWidth = "2";
-        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
-        //     context.stroke();
-        // }
+        drawCircle2();
 
-        // drawCircle2();
+        function drawCircle3() {
+            const canvas = document.createElement('canvas');
+            document.body.appendChild(canvas);
 
-        // function drawCircle3() {
-        //     const canvas = document.createElement('canvas');
-        //     canvas.width = 200;
-        //     canvas.height = 200;
-        //     canvas.color = "grey";
-        //     document.body.appendChild(canvas);
+            const context = canvas.getContext('2d');
+            context.beginPath();
+            context.lineWidth = "2";
+            context.arc(100, 100, 35, 0, 2 * Math.PI);
+            context.stroke();
+        }
 
-        //     const context = canvas.getContext('2d');
-        //     context.beginPath();
-        //     context.lineWidth = "2";
-        //     context.arc(100, 100, 90, 0, 2 * Math.PI);
-        //     context.stroke();
-        // }
-
-        // drawCircle3();
+        drawCircle3();
 
         modalMandat.appendChild(modalContent);
 
@@ -298,6 +309,7 @@ class messagerie {
     constructor(parentElement) {
         this.name = "Messagerie";
         this.parentElement = parentElement;
+        this.element = null;
     }
 
     displayText() {
@@ -305,10 +317,13 @@ class messagerie {
         boite3.textContent = this.name;
         boite3.classList.add('messagerie');
         this.parentElement.appendChild(boite3);
+        this.element = boite3;
+        this.element.addEventListener('click', this.openModalMessagerie.bind(this))
     }
 
 
     openModalMessagerie() {
+
 
         if (this.parentElement.parentElement.currentModal) {
             this.parentElement.parentElement.currentModal.remove();
@@ -316,14 +331,14 @@ class messagerie {
 
         const modalMessagerie = document.createElement('div');
         modalMessagerie.classList.add('modalMessagerie');
-        modal.style.backgroundColor = "#ecf0f1";
-        modal.style.width = "1200px";
-        modal.style.height = "350px";
-        modal.style.marginTop = "-300px";
-        modal.style.marginLeft = "270px";
-        modal.style.border = "1px solid #B8B8B8";
-        modal.style.paddingLeft = "30px";
-        modal.style.paddingTop = "30px";
+        modalMessagerie.style.backgroundColor = "#ecf0f1";
+        modalMessagerie.style.width = "1200px";
+        modalMessagerie.style.height = "350px";
+        modalMessagerie.style.marginTop = "-300px";
+        modalMessagerie.style.marginLeft = "270px";
+        modalMessagerie.style.border = "1px solid #B8B8B8";
+        modalMessagerie.style.paddingLeft = "30px";
+        modalMessagerie.style.paddingTop = "30px";
 
         let modalContent = document.createElement('div');
         modalContent.classList.add('modal-content');
@@ -334,7 +349,6 @@ class messagerie {
         this.parentElement.parentElement.currentModal = modalMessagerie;
 
         this.parentElement.appendChild(modalMessagerie);
-
     }
 }
 
@@ -343,12 +357,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxOneInstance = new BoxOne();
     boxOneInstance.boxOneInstance.displayText();
     boxOneInstance.mandatInstance.displayText();
-    boxOneInstance.messagerieInstance.displayText();;
-    boxOneInstance.boxOneInstance.openModalVehicule();
-    boxOneInstance.boxOneInstance.openModalMandat();
-    boxOneInstance.boxOneInstance.openModalMessagerie();
+    boxOneInstance.messagerieInstance.displayText();
 });
-/* Pop-up véhicule*/
+
 
 
 
