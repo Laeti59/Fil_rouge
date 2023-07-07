@@ -192,7 +192,7 @@
     font-size: 16px;
 }
 
-.ligne{
+.ligne-bloc{
     border: none;
     border-top: 1px solid #EE1F51;
     width: 25%;
@@ -205,7 +205,7 @@
     padding-left: 15px;
 }
 
-.prix h4{
+.prix-bloc h4{
     font-size: 14px;
 }
 
@@ -215,16 +215,16 @@
     padding-left: 15px;
 }
 
-.annee h4{
+.annee-bloc h4{
     font-size: 14px;
 }
 
 .marque p,
 .type p,
-.carburant p,
+.carburant-bloc p,
 .couleur p,
-.transmission p,
-.kilometrage p {
+.transmission-bloc p,
+.kilometrage-bloc p {
     display: inline-block;  
     vertical-align: middle; 
     padding-left: 10px;
@@ -233,10 +233,10 @@
 
 .marque img,
 .type img,
-.carburant img,
+.carburant-bloc img,
 .couleur img,
-.transmission img,
-.kilometrage img {
+.transmission-bloc img,
+.kilometrage-bloc img {
     vertical-align: middle;
     float: right; 
     margin-top: 10px;
@@ -270,91 +270,81 @@
 }
 
 .contenu-central{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: -350px;
+}
+
+.contenu-1,
+.contenu-2{
+    width: 13.2%;
+    border: 1px solid #b8b8b8;
+}
+
+.info-contenu{
+    margin-top: 220px;
+}
+
+.info-contenu,
+.info-contenu-2{
     text-align: center;
 }
 
-/* Première boite*/
-.contenu-1{
-    width: 13.5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -350px;
-}
-
-.info-contenu .ligne{
+.ligne{
+    border: none;
+    border-top: 1px solid #EE1F51;
+    width: 25%;
     margin: auto;
 }
 
-#ligne-haut{
-    width: 15%;
-    padding-bottom: 15px;
-}
-
-#ligne-bas{
-    width: 35%;
-}
-
-.prix,
-.kilometrage{
-    font-size: 18px;
-}
-
-.annee, 
-.carburant,
-.transmission{
-    display: inline;
-}
-.annee{
-    float: left;
-    margin-top: 0px;
-}
-
-.carburant{
-    float: right;
-    margin-top: 0px;
-}
-
-/*Deuxième boite*/
-
-.contenu-2{
-    width: 13.5%;
-    margin-left: auto;
-    margin-right: 350px;
-    margin-top: -350px;
-}
-
-.info-contenu-2 .ligne{
-    margin: auto;
-}
-
+#ligne-haut,
 #ligne-haut-2{
     width: 15%;
     padding-bottom: 15px;
 }
 
+#ligne-bas,
 #ligne-bas-2{
-    width: 35%;
+    width: 25%;
 }
 
+.prix,
 .prix-2,
+.kilometrage,
 .kilometrage-2{
     font-size: 18px;
+    text-align: center;
 }
 
+.annee,
 .annee-2, 
+.carburant,
 .carburant-2,
+.transmission,
 .transmission-2{
     display: inline;
 }
+.annee,
 .annee-2{
     float: left;
     margin-top: 0px;
+    padding-left: 8px;
 }
 
+.transmission,
+.transmission-2{
+    padding-left: 5px;
+}
+
+.carburant,
 .carburant-2{
     float: right;
     margin-top: 0px;
+    padding-right: 8px;
 }
+
+
 
 /* Footer*/
 

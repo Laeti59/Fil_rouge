@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dce549eaed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Assets/CSS/page.liste.vehicule.css">
+    <link rel="stylesheet" href="../Assets/CSS/carousel.fiche.vehicule.css">
     <title>Document</title>
 </head>
 
@@ -48,7 +49,6 @@
             </div>
             <div class="lien-vendeur">
                 <a href="../HTML/page-vendeur.html">Vous désirez vendre votre véhicule ?</a>
-                <!--Mettre le lien de la page vendeur-->
             </div>
             <div class="menu-deroulant">
                 <a href="">Nos véhicules d'occasion
@@ -57,10 +57,10 @@
                 </a>
             </div>
             <div class="logo-home">
-                <i class="fa-solid fa-house"></i>
+                <a href="../HTML/index.html"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="lien-acheteur">
-                <a href="">Vous désirez acheter ? <br> Contactez-nous !</a> <!--Mettre le lien page acheteur-->
+                <a href="../HTML/page-acheteur.html">Vous désirez acheter ? <br> Contactez-nous !</a>
             </div>
             <div class="connection">
                 <a href="" target="_blank">
@@ -82,18 +82,18 @@
             <div class="bloc-1">
                 <div class="titre-recherche">
                     <h3>Recherche Avancée</h3>
-                    <hr class="ligne">
+                    <hr class="ligne-bloc">
                 </div>
             </div>
 
             <div class="bloc-2">
-                <div class="prix">
+                <div class="prix-bloc">
                     <h4>Prix</h4>
                 </div>
             </div>
 
             <div class="bloc-3">
-                <div class="annee">
+                <div class="annee-bloc">
                     <h4>Année du modèle</h4>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <p>Par type</p>
                     <img src="../Assets/Image/icons8-chevron-down-30.png" alt="chevron-down">
                 </div>
-                <div class="carburant">
+                <div class="carburant-bloc">
                     <p>Par carburant</p>
                     <img src="../Assets/Image/icons8-chevron-down-30.png" alt="chevron-down">
                 </div>
@@ -115,11 +115,11 @@
                     <p>Par couleur</p>
                     <img src="../Assets/Image/icons8-chevron-down-30.png" alt="chevron-down">
                 </div>
-                <div class="transmission">
+                <div class="transmission-bloc">
                     <p>Par transmission</p>
                     <img src="../Assets/Image/icons8-chevron-down-30.png" alt="chevron-down">
                 </div>
-                <div class="kilometrage">
+                <div class="kilometrage-bloc">
                     <p>Par kilométrage</p>
                     <img src="../Assets/Image/icons8-chevron-down-30.png" alt="chevron-down">
                 </div>
@@ -139,9 +139,31 @@
 
         <div class="contenu-central">
             <div class="contenu-1">
-                <div class="image-1">
-                    <img src="../Assets/Voiture/Peugeot 5008/photo.jpg" alt="Peugeot 5008" width="250" height="200">
+                <div class="carousel">
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/photo.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/111.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/1.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/11111.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/m.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/558.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/4.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/5.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/6.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/7.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides"><img src="../Assets/Voiture/Peugeot 5008/11.jpg" alt="Peugeot 5008"
+                            width="250px" height="200px"></div>
                 </div>
+
                 <div class="info-contenu">
                     <p>Peugeot 5008</p>
                     <hr class="ligne" id="ligne-haut">
@@ -155,22 +177,38 @@
             </div>
 
             <div class="contenu-2">
-                <div class="image-2">
-                    <img src="../Assets/Voiture/Mercedes Classe A/photo.jpg" alt="Peugeot 5008" width="250" height="200">
+                <div class="carousel-2">
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/photo.jpg"
+                            alt="Mercedes Classe A" width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/8.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/3.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/2.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/1.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/photo7.jpg"
+                            alt="Mercedes Classe A" width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/5.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
+                    <div class="mySlides-2"><img src="../Assets/Voiture/Mercedes Classe A/6.jpg" alt="Mercedes Classe A"
+                            width="250px" height="200px"></div>
                 </div>
+
+
                 <div class="info-contenu-2">
-                    <p>Peugeot 5008</p>
+                    <p class="titre-2">Mercedes Classe A</p>
                     <hr class="ligne" id="ligne-haut-2">
                     <hr class="ligne" id="ligne-bas-2">
-                    <p class="prix-2">23 490€</p>
-                    <p class="annee-2">2019</p>
+                    <p class="prix-2">21 990€</p>
+                    <p class="annee-2">2017</p>
                     <p class="transmission-2">Manuelle</p>
                     <p class="carburant-2">Diesel</p>
-                    <p class="kilometrage-2">96 500km</p>
+                    <p class="kilometrage-2">93 000km</p>
                 </div>
             </div>
         </div>
-
     </section>
 
 
@@ -252,6 +290,8 @@
         </div>
 
     </footer>
+
+    <script src="../Assets/JS/page.liste.vehicule.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+/* Le carousel*/
+
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 350px;
+    height: 1000px; */
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mySlides:nth-child(1) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(2) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(3) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(4) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(5) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(6) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(7) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(8) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(9) {
+    background-size: cover;
+    background-position: center;
+}
