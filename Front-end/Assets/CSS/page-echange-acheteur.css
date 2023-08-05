@@ -1,13 +1,13 @@
-* {
+*{
     font-family: 'Roboto', sans-serif;
 }
-
 .header {
     background: rgba(50, 50, 50, 0.35);
-    height: 130px;
+    height: 130px; 
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
+    /* backdrop-filter: blur(15px); */
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
 }
 
@@ -56,11 +56,11 @@
     margin-top: 10px;
 }
 
-.facebook {
+.facebook{
     margin-right: 3px;
 }
 
-.instagram {
+.instagram{
     margin-left: 3px;
 }
 
@@ -82,6 +82,7 @@
 .titre {
     display: flex;
     margin-left: -18px;
+    /* margin-top: 10px; */
 }
 
 .titre-logo {
@@ -101,6 +102,8 @@
 }
 
 /* Barre de Nagivation*/
+
+
 
 .info a,
 .info p {
@@ -154,261 +157,97 @@
     margin-left: 1150px;
 }
 
-.fa-user {
+.fa-user{ 
     color: white;
 }
 
-.fa-house {
-    color: white;
-    cursor: pointer;
-}
-
-.fa-angle-down {
+.fa-house{
     color: white;
 }
 
-/* Section One*/
-
-.section-one{
-    width: 20%;
+.fa-angle-down{
+    color: white;
 }
 
-.presentation-produit{
-    margin-left: 50px;
+
+/* Mise en place nom et prénom du conseillé et du client*/
+
+.contact {
+    margin-top: 40px;
+    margin-left: 150px;
 }
 
-.titre{
+.client {
+    margin-top: -40px;
     display: flex;
-    justify-content: center;
-}
-
-.h3-titre{
-    font-size: 35px;
-}
-
-/* Le carousel*/
-
-.carousel {
-    position: relative;
-    top: 0;
-    left: 0;
-    /* width: 350px;
-    height: 1000px; */
-    z-index: 1;
-    /* overflow: hidden; */
-}
-
-.mySlides {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.mySlides:nth-child(1) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(2) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(3) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(4) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(5) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(6) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(7) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(8) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(9) {
-    background-size: cover;
-    background-position: center;
-}
-
-/* Section Two*/
-
-.section-two{
-    width: 30%;
-    display: flex;
-    margin: auto;
-    padding-right: 350px;
-    margin-top: -55px;
-}
-
-.titre-description{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.descp{
-    padding-right: 180px;
-}
-
-/* Le contenu*/
-
-.button-360{
-    background-color: #EE1F51;
-    border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 14px;
-}
-
-.logo-tel{
-    display: inline;
-}
-
-.numero-tel{
-    color: black;
-    text-decoration: none;
-}
-
-.BBC-section{
-    font-size: 14px;
-    margin-left: 70px;
-    font-style: italic;
-}
-
-.logo-tel a {
-    margin-top: -20px;
-}
-
-
-/* Les options*/
-
-.section-three{
-    width: 50%;
-    margin-top: 60px;
-}
-
-.bloc{
-    content: "";
-    display: table;
-    clear: 0 10px;
-    border: 1px solid #B8B8B8;
-    background-color: #dcdde1;
-    margin-left: 50px;
-}
-
-.titre-bloc{
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
-}
-
-div .liste-1,
-div .liste-2{
-    float: left;
-    height: 400px;
-    padding: 0 10px;
-}
-
-.liste-2{
-    margin-left: 60px;
-}
-
-
-/* Le formulaire*/
-
-.formulaire{
-    width: 30%;
-    float: right;
-    margin-top: -890px;
+    justify-content: right;
     margin-right: 200px;
 }
 
-.bloc-form{
-    display: inline-block;
-    text-align: center;
+
+
+/* Mise en place des rubriques*/
+
+.BoxOne{
+    margin-top: 130px;
+    display: block;
+    width: 8%;
+    border-right: 1px solid #B8B8B8;
+    height: 141px;
+} 
+
+.vehicule{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-decoration: underline 1.5px solid red;
+    cursor: pointer;
 }
 
-.bloc-form-contenu{
-    width: 40%;
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-.bloc-form-contenu input{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-.bloc-form-contenu textarea{
-    height: 80px;
-    width: 170px;
-    margin-bottom: 20px;
-}
-
-.button-envoyer{
-    width: 120px;
-    background-color: #EE1F51;
-    border: 1px solid #B8B8B8;
-}
-
+.messagerie{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    text-decoration: underline 1.5px solid red;
+    cursor: pointer;
+} 
 
 
 /* Footer*/
 
-footer {
+footer{
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 300px;
+    height: 300px; 
     margin-left: -8px;
     margin-right: -8px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -500px;
+    bottom: -150px ;
     width: 100%;
 }
 
-.logo-footer {
+.logo-footer{
     display: flex;
     justify-content: space-around;
     margin-right: 350px;
 }
 
-.coordonnees-footer {
+.coordonnees-footer{
     display: flex;
     justify-content: center;
     text-decoration: none;
     margin-top: -160px;
-}
+} 
 
-p.nos-coordonnees {
+p.nos-coordonnees{
     color: white;
-    font-size: 26px;
-}
+    font-size: 24px;
+} 
 
 /* Logo */
 
-.info-footer {
+.info-footer{
     display: inline;
 }
 
@@ -422,7 +261,6 @@ p.nos-coordonnees {
 .titre-footer {
     display: flex;
     margin-left: -18px;
-    /* margin-top: 10px; */
 }
 
 .titre-logo-footer {
@@ -437,14 +275,14 @@ p.nos-coordonnees {
     font-size: 30px;
 }
 
-p.logo-bbc-footer {
+p.logo-bbc-footer  {
     margin-left: 5px;
 }
 
 
 /* Coordonnées footer*/
 
-.entreprise-footer {
+.entreprise-footer{
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -454,37 +292,37 @@ p.logo-bbc-footer {
 
 .adresse-footer {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     width: 100%;
 }
 
-.logo-adresse-footer {
+.logo-adresse-footer{
     margin-right: 20px;
 }
 
-.text-adresse {
+.text-adresse{
     color: white;
     margin-bottom: 20px;
 }
 
 
 
-.tel-footer {
+.tel-footer{
     display: flex;
     justify-content: center;
 }
 
-.text-tel {
+.text-tel{
     margin-right: 150px;
     margin-bottom: 30px;
 }
 
-.le-mail {
+.le-mail{
     display: flex;
     justify-content: center;
 }
 
 
-.text-mail {
+.text-mail{
     margin-right: 30px;
 }

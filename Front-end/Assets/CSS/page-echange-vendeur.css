@@ -1,9 +1,10 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
+
 .header {
     background: rgba(50, 50, 50, 0.35);
-    height: 130px; 
+    height: 130px;
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
@@ -56,11 +57,11 @@
     margin-top: 10px;
 }
 
-.facebook{
+.facebook {
     margin-right: 3px;
 }
 
-.instagram{
+.instagram {
     margin-left: 3px;
 }
 
@@ -157,65 +158,120 @@
     margin-left: 1150px;
 }
 
-.fa-user{ 
+.fa-user {
     color: white;
 }
 
-.fa-house{
+.fa-house {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-angle-down {
     color: white;
 }
 
-.fa-angle-down{
-    color: white;
+
+/* Mise en place nom et prénom du conseillé et du client*/
+
+.contact {
+    margin-top: 40px;
+    margin-left: 150px;
 }
+
+.client {
+    margin-top: -40px;
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+}
+
+
+
+/* Mise en place des rubriques*/
+
+.BoxOne{
+    margin-top: 100px;
+    display: block;
+    width: 8%;
+    border-right: 1px solid #B8B8B8;
+    height: 218px;
+} 
+
+.vehicule{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-decoration: underline 1.5px solid red;
+    cursor: pointer;
+}
+
+.mandat{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    text-decoration: underline 1.5px solid red;
+    cursor: pointer;
+}
+
+
+.messagerie{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    text-decoration: underline 1.5px solid red;
+    cursor: pointer;
+} 
+
 
 /* Footer*/
 
-footer{
+footer {
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 400px; 
+    height: 300px;
     margin-left: -8px;
     margin-right: -8px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -400px ;
+    bottom: -100px;
     width: 100%;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     justify-content: space-around;
     margin-right: 350px;
 }
 
-.coordonnees-footer{
+.coordonnees-footer {
     display: flex;
     justify-content: center;
     text-decoration: none;
-} 
+    margin-top: -160px;
+}
 
-p.nos-coordonnees{
+p.nos-coordonnees {
     color: white;
-    font-size: 24px;
-} 
+    font-size: 26px;
+}
 
 /* Logo */
 
-.info-footer{
+.info-footer {
     display: inline;
 }
 
 .logo-bbc-footer {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .titre-footer {
     display: flex;
     margin-left: -18px;
-    /* margin-top: 10px; */
 }
 
 .titre-logo-footer {
@@ -230,54 +286,54 @@ p.nos-coordonnees{
     font-size: 30px;
 }
 
-p.logo-bbc-footer  {
+p.logo-bbc-footer {
     margin-left: 5px;
 }
 
 
 /* Coordonnées footer*/
 
-.entreprise-footer{
+.entreprise-footer {
     display: inline-block;
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
 
 .adresse-footer {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 }
 
-.logo-adresse-footer{
+.logo-adresse-footer {
     margin-right: 20px;
 }
 
-.text-adresse{
+.text-adresse {
     color: white;
     margin-bottom: 20px;
 }
 
 
 
-.tel-footer{
+.tel-footer {
     display: flex;
     justify-content: center;
 }
 
-.text-tel{
+.text-tel {
     margin-right: 150px;
     margin-bottom: 30px;
 }
 
-.le-mail{
+.le-mail {
     display: flex;
     justify-content: center;
 }
 
 
-.text-mail{
+.text-mail {
     margin-right: 30px;
 }

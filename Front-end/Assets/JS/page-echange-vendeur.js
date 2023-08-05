@@ -281,6 +281,37 @@ class mandat {
         drawCircle(300, 100);
         drawCircle(500, 100);
 
+        /* Div texte bull*/
+
+        let divTexte = document.createElement('div');
+        divTexte.style.width = "60%";
+        divTexte.style.display = "flex";
+        divTexte.style.justifyContent = "space-evenly";
+        divTexte.style.marginLeft = "300px";
+        divTexte.style.marginTop = "-20px";
+        modalContent.appendChild(divTexte);
+
+        /* En cours*/
+
+        let enCours = document.createElement('p');
+        enCours.textContent = "En cours";
+        enCours.style.width = "20%";
+        divTexte.appendChild(enCours);
+
+        /* Résilier ou Virement reçu*/
+
+        let resilier = document.createElement('p');
+        resilier.textContent = "Résilier ou Virement reçu";
+        resilier.style.width = "20%";
+        divTexte.appendChild(resilier);
+
+        /* Vendu*/
+
+        let vendu = document.createElement('p');
+        vendu.textContent = " Vendu";
+        vendu.style.width = "20%";
+        divTexte.appendChild(vendu);
+
 
         modalMandat.appendChild(modalContent);
 
@@ -352,13 +383,11 @@ class messagerie {
 
         const ecrireMessage = document.createElement('div');
         ecrireMessage.classList.add('ecrireMessage');
-        ecrireMessage.style.width = "1000px";
+        ecrireMessage.style.width = "1050px";
         ecrireMessage.style.height = "100px";
         ecrireMessage.style.borderTop = "1px solid #B8B8B8";
-        ecrireMessage.style.borderLeft = "1px solid #B8B8B8";
         ecrireMessage.style.borderRight = "1px solid #B8B8B8";
         ecrireMessage.style.backgroundColor = "#f5f6fa";
-        ecrireMessage.style.marginLeft = "40px";
         ecrireMessage.style.marginTop = "210px";
 
         const indication = document.createElement ('p');
@@ -374,7 +403,7 @@ class messagerie {
         fleche.src = "../Assets/Image/icons8-sent-50.png";
         fleche.style.width = "40px";
         fleche.style.height = "40px";
-        fleche.style.marginLeft = "1030px";
+        fleche.style.marginLeft = "1080px";
         fleche.style.marginTop = "-120px";
 
         this.parentElement.parentElement.currentModal = modalMessagerie;
