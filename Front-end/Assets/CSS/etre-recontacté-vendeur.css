@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .header {
     background: rgba(50, 50, 50, 0.35);
@@ -7,7 +9,6 @@
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
-    /* backdrop-filter: blur(15px); */
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
 }
 
@@ -169,85 +170,135 @@
     color: white;
 }
 
+/* Première section*/
 
-/* Mise en place nom et prénom du conseillé et du client*/
-
-.contact {
-    margin-top: 40px;
-    margin-left: 150px;
-}
-
-.client {
-    margin-top: -40px;
+.section-one{
     display: flex;
-    justify-content: right;
-    margin-right: 200px;
+    justify-content: center;
+}
+
+.message1{
+    margin-top: 50px;
+    font-size: 24px;
+} 
+
+.message2{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.message3{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}  
+
+.petit-message{
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.message4{
+    color: #ff0000;
 }
 
 
+/* Section deux + formulaire*/
 
-/* Mise en place des rubriques*/
-
-.BoxOne{
-    margin-top: 130px;
+.mon-formulaire{
     display: block;
-    width: 8%;
-    border-right: 1px solid #B8B8B8;
-    height: 141px;
-} 
-
-.vehicule{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 60px;
+    border: 2px solid #B8B8B8;
 }
 
-.messagerie{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
-} 
 
+input{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+}
+
+.envoyer-form{
+    width: 100px;
+    padding: 10px;
+    margin-left: 15%;
+    background-color: #5BC00B;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.section-two{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.titre-coord {
+    margin-left: 80px;
+}
+
+.ma-boite{
+    border: 2px solid #B8B8B8;
+    width: 450px;
+    height: 300px;
+}
+
+.titre-list{
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.list-doc {
+    padding-left: 40px;
+}
+
+.list-doc li{
+    margin-top: 20px;
+}
 
 /* Footer*/
 
-footer{
+footer {
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 300px; 
-    margin-left: -8px;
-    margin-right: -8px;
+    height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -150px ;
+    bottom: -100px;
     width: 100%;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     justify-content: space-around;
     margin-right: 350px;
 }
 
-.coordonnees-footer{
+.coordonnees-footer {
     display: flex;
     justify-content: center;
     text-decoration: none;
     margin-top: -160px;
-} 
+}
 
-p.nos-coordonnees{
+p.nos-coordonnees {
     color: white;
-    font-size: 24px;
-} 
+    font-size: 26px;
+}
 
 /* Logo */
 
-.info-footer{
+.info-footer {
     display: inline;
 }
 
@@ -275,14 +326,14 @@ p.nos-coordonnees{
     font-size: 30px;
 }
 
-p.logo-bbc-footer  {
+p.logo-bbc-footer {
     margin-left: 5px;
 }
 
 
 /* Coordonnées footer*/
 
-.entreprise-footer{
+.entreprise-footer {
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -292,37 +343,37 @@ p.logo-bbc-footer  {
 
 .adresse-footer {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 }
 
-.logo-adresse-footer{
+.logo-adresse-footer {
     margin-right: 20px;
 }
 
-.text-adresse{
+.text-adresse {
     color: white;
     margin-bottom: 20px;
 }
 
 
 
-.tel-footer{
+.tel-footer {
     display: flex;
     justify-content: center;
 }
 
-.text-tel{
+.text-tel {
     margin-right: 150px;
     margin-bottom: 30px;
 }
 
-.le-mail{
+.le-mail {
     display: flex;
     justify-content: center;
 }
 
 
-.text-mail{
+.text-mail {
     margin-right: 30px;
 }

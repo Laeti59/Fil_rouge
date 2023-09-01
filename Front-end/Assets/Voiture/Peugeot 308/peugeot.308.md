@@ -13,7 +13,7 @@ Année du modèle 2009
 Couleur extèrieur GRIS FONCE
 Kilométrage 197200 km
 
-OPTION : 
+OPTION :  
 
 ABS (Antiblocage de roues) 
 Aide au Freinage d'Urgence (AFU) 
@@ -25,7 +25,7 @@ Alerte visuelle et sonore de non bouclage et de débouclage des ceintures de sé
 Allumage automatique des feux de détresse en cas de forte décélération 
 Antidémarrage codé électronique 
 Appuie-tête arrière (x 3) réglables en hauteur 
-Appuie-tête avant virgule réglables en hauteur 
+Appuie-tête avant réglables en hauteur 
 Banquette arrière rabattable 1/3 - 2/3 
 Becquet arrière couleur carrosserie 
 Boîte à gants éclairée et réfrigérable 

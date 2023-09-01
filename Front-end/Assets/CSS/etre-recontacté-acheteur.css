@@ -1,10 +1,11 @@
-* {
+*{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 .header {
     background: rgba(50, 50, 50, 0.35);
-    height: 130px;
+    height: 130px; 
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
@@ -57,11 +58,11 @@
     margin-top: 10px;
 }
 
-.facebook {
+.facebook{
     margin-right: 3px;
 }
 
-.instagram {
+.instagram{
     margin-left: 3px;
 }
 
@@ -158,70 +159,144 @@
     margin-left: 1150px;
 }
 
-.fa-user {
+.fa-user{ 
     color: white;
 }
 
-.fa-house {
-    color: white;
-    cursor: pointer;
-}
-
-.fa-angle-down {
+.fa-house{
     color: white;
 }
 
+.fa-angle-down{
+    color: white;
+}
 
-/* Mise en place nom et prénom du conseillé et du client*/
+/* Première section*/
 
-.contact {
+.section-one{
     margin-top: 40px;
-    margin-left: 150px;
-}
-
-.client {
-    margin-top: -40px;
     display: flex;
-    justify-content: right;
-    margin-right: 200px;
+    justify-content: center;
 }
 
+.message1{
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+} 
+
+.message2, .message3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.message4{
+    width: 300px;
+    text-align: center;
+    color: #ff0000;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}  
 
 
-/* Mise en place des rubriques*/
+/* Section deux + formulaire*/
 
-.BoxOne{
-    margin-top: 100px;
+.mon-formulaire{
     display: block;
-    width: 8%;
-    border-right: 1px solid #B8B8B8;
-    height: 218px;
-} 
-
-.vehicule{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
-}
-
-.mandat{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 60px;
+    border: 2px solid #B8B8B8;
 }
 
 
-.messagerie{
-    border-bottom: 1px solid #B8B8B8;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    text-decoration: underline 1.5px solid red;
-    cursor: pointer;
-} 
+input{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+}
+
+.envoyer-form{
+    width: 100px;
+    padding: 10px;
+    margin-left: 15%;
+    background-color: #5BC00B;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.section-two{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.ma-boite{
+    border: 2px solid #B8B8B8;
+    width: 450px;
+    height: 300px;
+}
+
+.adresse-boite{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.tel-boite{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.logo-tel-boite{
+    margin-left: 20px;
+}
+
+.numero-boite{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 150px;
+}
+
+.mail-boite{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-mail-boite{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.email-boite{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 25px;
+}
+
+.titre-horaire{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.les-horaires {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
 
 
 /* Footer*/
@@ -229,12 +304,10 @@
 footer {
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 300px;
-    margin-left: -8px;
-    margin-right: -8px;
+    height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -100px;
+    bottom: -150px;
     width: 100%;
 }
 
@@ -337,3 +410,4 @@ p.logo-bbc-footer {
 .text-mail {
     margin-right: 30px;
 }
+

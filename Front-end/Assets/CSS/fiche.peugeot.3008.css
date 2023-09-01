@@ -189,67 +189,8 @@
     font-size: 35px;
 }
 
-/* Le carousel*/
-
-.carousel {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.photo {
     margin-top: 20px;
-}
-
-.mySlides {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.mySlides:nth-child(1) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(2) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(3) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(4) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(5) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(6) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(7) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(8) {
-    background-size: cover;
-    background-position: center;
-}
-
-.mySlides:nth-child(9) {
-    background-size: cover;
-    background-position: center;
 }
 
 /* Section Two*/
@@ -258,12 +199,16 @@
     width: 70%;
     display: flex;
     justify-content: center;
-    margin-top: -20px;
+    margin-top: -350px;
 }
 
 .titre-description{
     display: flex;
     justify-content: space-evenly;
+}
+
+.lien-vue {
+    margin-top: 10px;
 }
 
 .descp{
@@ -272,6 +217,38 @@
 
 .les-infos p {
     margin-top: 10px;
+}
+
+/* Le formulaire*/
+
+.formulaire{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+}
+
+.bloc-form{
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc-form-contenu{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.bloc-form-contenu input{
+    width: 120%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.bloc-form-contenu textarea{
+    height: 80px;
+    width: 120%;
+    margin-bottom: 20px;
 }
 
 /* Le contenu*/
@@ -299,16 +276,12 @@
     font-style: italic;
 }
 
-.logo-tel a {
-    margin-top: -20px;
-}
-
 
 /* Les options*/
 
 .section-three{
     width: 60%;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 .bloc{
@@ -324,13 +297,14 @@
     display: flex;
     justify-content: center;
     margin-right: 100px;
+    margin-bottom: 20px;
 }
 
 div .liste-1,
 div .liste-2{
     float: left;
-    height: 280px;
-    padding: 0 40px;
+    height: 150px;
+    padding: 0px 40px;
 }
 
 .liste-2{
@@ -338,37 +312,7 @@ div .liste-2{
 }
 
 
-/* Le formulaire*/
 
-.formulaire{
-    width: 30%;
-    position: absolute;
-    right: 10%;
-}
-
-.bloc-form{
-    display: inline-block;
-    text-align: center;
-}
-
-.bloc-form-contenu{
-    width: 40%;
-    margin-left: 130px;
-    margin-top: 50px;
-}
-
-.bloc-form-contenu input{
-    width: 120%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-.bloc-form-contenu textarea{
-    height: 80px;
-    width: 120%;
-    margin-bottom: 20px;
-}
 
 .button-envoyer{
     width: 120px;
@@ -386,7 +330,7 @@ footer {
     height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -280px;
+    bottom: -180px;
     width: 100%;
 }
 

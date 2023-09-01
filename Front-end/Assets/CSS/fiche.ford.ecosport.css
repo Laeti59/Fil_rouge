@@ -324,13 +324,15 @@
     display: flex;
     justify-content: center;
     margin-right: 100px;
+    margin-top: 10px;
 }
 
 div .liste-1,
 div .liste-2{
     float: left;
-    height: 280px;
+    height: 220px;
     padding: 0 40px;
+    margin-top: 10px;
 }
 
 .liste-2{
@@ -386,7 +388,7 @@ footer {
     height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -280px;
+    bottom: -240px;
     width: 100%;
 }
 

@@ -48,10 +48,11 @@ class BoxOne {
         const boxOne = document.createElement('div');
         boxOne.classList.add('BoxOne');
         document.body.appendChild(boxOne);
-        this.boxOneInstance = new vehicule(boxOne);
-        this.messagerieInstance = new messagerie(boxOne);
 
-        this.boxOneInstance.displayText();
+        this.boxOneInstance = new vehicule(boxOne);
+        this.mandatInstance = new mandat(boxOne);
+        this.messagerieInstance = new messagerie(boxOne);
+        // this.boxOneInstance.openModalVehicule();
     }
 }
 
@@ -63,7 +64,6 @@ class vehicule {
         this.name = "Mes véhicules";
         this.parentElement = parentElement;
         this.element = null;
-        this.openModalVehicule();
     }
 
     displayText() {
@@ -95,7 +95,7 @@ class vehicule {
         modal.style.backgroundColor = "#ecf0f1";
         modal.style.width = "1200px";
         modal.style.paddingBlock = "40px"
-        modal.style.marginTop = "-220px";
+        modal.style.marginTop = "-200px";
         modal.style.marginLeft = "270px";
         modal.style.border = "1px solid #B8B8B8";
         modal.style.paddingLeft = "30px";
@@ -136,6 +136,7 @@ class vehicule {
 
         let marque = document.createElement('p');
         marque.textContent = "Opel";
+        marque.style.marginTop = "10px";
         marque.style.fontSize = "18px";
         marque.style.marginLeft = "250px";
         modalContent.appendChild(marque);
@@ -144,6 +145,7 @@ class vehicule {
 
         let modele = document.createElement('p');
         modele.textContent = "Zarifa";
+        modele.style.marginTop = "10px";
         modele.style.fontSize = "18px";
         modele.style.marginLeft = "250px";
         modalContent.appendChild(modele);
@@ -152,6 +154,7 @@ class vehicule {
 
         let immatriculation = document.createElement('p');
         immatriculation.textContent = "AZ-527-KJ";
+        immatriculation.style.marginTop = "10px";
         immatriculation.style.fontSize = "18px";
         immatriculation.style.marginLeft = "250px";
         modalContent.appendChild(immatriculation);
@@ -160,6 +163,7 @@ class vehicule {
 
         let prix = document.createElement('p');
         prix.textContent = "8 690€";
+        prix.style.marginTop = "10px";
         prix.style.fontSize = "18px";
         prix.style.marginLeft = "250px";
         modalContent.appendChild(prix);
@@ -168,79 +172,11 @@ class vehicule {
 
         let kilométrage = document.createElement('p');
         kilométrage.textContent = "168 000KM";
+        kilométrage.style.marginTop = "10px";
         kilométrage.style.fontSize = "18px";
         kilométrage.style.marginLeft = "250px";
         modalContent.appendChild(kilométrage);
 
-        /* Les cercles*/
-
-        const canvas = document.createElement('canvas');
-        canvas.width = 1000;
-        canvas.style.marginLeft = "100px";
-        canvas.style.marginTop = "-50px"
-        modalContent.appendChild(canvas);
-
-        const context = canvas.getContext('2d');
-        context.lineWidth = "2";
-
-        function drawCircle(x, y) {
-            context.beginPath();
-            context.arc(x, y, 30, 0, 2 * Math.PI);
-            context.stroke();
-        }
-
-        drawCircle(100, 100);
-        drawCircle(300, 100);
-        drawCircle(500, 100);
-        drawCircle(700, 100);
-        drawCircle(900, 100);
-
-
-        /* Div texte bull*/
-
-        let divTexte = document.createElement('div');
-        divTexte.style.width = "80%";
-        divTexte.style.display = "flex";
-        divTexte.style.justifyContent = "space-evenly";
-        divTexte.style.marginLeft = "120px";
-        divTexte.style.marginTop = "-30px";
-        modalContent.appendChild(divTexte);
-
-        /* Commande validée*/
-
-        let validée = document.createElement('p');
-        validée.textContent = "Commande validée";
-        validée.style.width = "20%";
-        divTexte.appendChild(validée);
-
-        /* Réception du virement*/
-
-        let reception = document.createElement('p');
-        reception.textContent = "Réception du virement";
-        reception.style.width = "20%";
-        divTexte.appendChild(reception);
-
-        /* En cours de préparation*/
-
-        let preparation = document.createElement('p');
-        preparation.textContent = "Prépartion du virement";
-        preparation.style.width = "20%";
-        divTexte.appendChild(preparation);
-
-        /* Livraison planifié*/
-
-        let livraison = document.createElement('p');
-        livraison.textContent = "Livraison planifié";
-        livraison.style.width = "20%";
-        divTexte.appendChild(livraison);
-
-        /* Facture envoyée*/
-
-        let facture = document.createElement('p');
-        facture.textContent = "Facture envoyée";
-        facture.style.width = "20%";
-        facture.style.marginRight = "-50px";
-        divTexte.appendChild(facture);
 
         /* Ajout du contenu à la modal*/
 
@@ -251,6 +187,136 @@ class vehicule {
         this.parentElement.appendChild(modal);
     }
 };
+
+
+/* Rubrique Mandat*/
+
+class mandat {
+    constructor(parentElement) {
+        this.name = "Mandat";
+        this.parentElement = parentElement;
+        this.element = null;
+    }
+
+    displayText() {
+        const boite2 = document.createElement('p');
+        boite2.textContent = this.name;
+        boite2.classList.add('mandat');
+        this.parentElement.appendChild(boite2);
+        this.element = boite2;
+        this.element.addEventListener('click', this.openModalMandat.bind(this));
+    }
+
+    openModalMandat() {
+
+        if (this.parentElement.parentElement.modalMandat) {
+            console.this
+            return;
+        }
+
+        if (this.parentElement.parentElement.currentModal) {
+            this.parentElement.parentElement.currentModal.remove();
+        }
+
+        const modalMandat = document.createElement('div');
+        modalMandat.classList.add('modalMandat');
+        modalMandat.id = "modalMandat";
+        modalMandat.style.backgroundColor = "#ecf0f1";
+        modalMandat.style.width = "1200px";
+        modalMandat.style.height = "350px";
+        modalMandat.style.marginTop = "-200px";
+        modalMandat.style.marginLeft = "270px";
+        modalMandat.style.border = "1px solid #B8B8B8";
+        modalMandat.style.paddingLeft = "30px";
+        modalMandat.style.paddingTop = "30px";
+
+        let modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+        /* Le titre*/
+
+        let titre = document.createElement('p');
+        titre.textContent = "Mon Véhicule";
+        titre.style.fontSize = "24px";
+        titre.style.textDecoration = "Underline";
+        modalContent.appendChild(titre);
+
+        let image = document.createElement("img");
+        image.src = "../Assets/Voiture/Opel Zafira/photo.jpg";
+        image.style.width = "250px";
+        image.style.width = "220px";
+        image.style.marginTop = "20px";
+        modalContent.appendChild(image);
+
+        /* La marque*/
+
+        let marque = document.createElement('p');
+        marque.textContent = "Opel Zafira";
+        marque.style.fontSize = "18px";
+        marque.style.marginLeft = "250px";
+        marque.style.marginTop = "-120px"
+        modalContent.appendChild(marque);
+
+
+        /* Les cercles*/
+
+        const canvas = document.createElement('canvas');
+        canvas.width = 600;
+        canvas.style.marginLeft = "320px";
+        modalContent.appendChild(canvas);
+
+        const context = canvas.getContext('2d');
+        context.lineWidth = "2";
+
+        function drawCircle(x, y) {
+            context.beginPath();
+            context.arc(x, y, 35, 0, 2 * Math.PI);
+            context.stroke();
+        }
+
+        drawCircle(100, 100);
+        drawCircle(300, 100);
+        drawCircle(500, 100);
+
+        /* Div texte bull*/
+
+        let divTexte = document.createElement('div');
+        divTexte.style.width = "60%";
+        divTexte.style.display = "flex";
+        divTexte.style.justifyContent = "space-evenly";
+        divTexte.style.marginLeft = "320px";
+        modalContent.appendChild(divTexte);
+
+        /* En cours*/
+
+        let enCours = document.createElement('p');
+        enCours.textContent = "En cours";
+        enCours.style.width = "20%";
+        divTexte.appendChild(enCours);
+
+        /* Résilier ou Virement reçu*/
+
+        let resilier = document.createElement('p');
+        resilier.textContent = "Résilier ou Virement reçu";
+        resilier.style.width = "20%";
+        divTexte.appendChild(resilier);
+
+        /* Vendu*/
+
+        let vendu = document.createElement('p');
+        vendu.textContent = " Vendu";
+        vendu.style.width = "20%";
+        divTexte.appendChild(vendu);
+
+
+        modalMandat.appendChild(modalContent);
+
+        this.parentElement.parentElement.currentModal = modalMandat;
+
+        this.parentElement.appendChild(modalMandat);
+    }
+}
+
 
 /* Rubrique Messagerie*/
 
@@ -284,14 +350,15 @@ class messagerie {
         modalMessagerie.id = "modalMessagerie";
         modalMessagerie.style.backgroundColor = "#ecf0f1";
         modalMessagerie.style.width = "1200px";
-        modalMessagerie.style.height = "369px";
-        modalMessagerie.style.marginTop = "-220px";
+        modalMessagerie.style.height = "375px";
+        modalMessagerie.style.marginTop = "-200px";
         modalMessagerie.style.marginLeft = "270px";
         modalMessagerie.style.border = "1px solid #B8B8B8";
         modalMessagerie.style.paddingLeft = "30px";
 
         const titre = document.createElement('p');
         titre.textContent = "Votre conversation avec votre conseillé Bye Buy Car Lille";
+        titre.style.paddingTop = "20px";
         titre.style.fontSize = "18px";
         titre.style.color = "#84817a";
         titre.style.marginBottom = "-20px";
@@ -301,7 +368,7 @@ class messagerie {
         const zoneMessage = document.createElement('div');
         zoneMessage.classList.add('zoneMessage');
         zoneMessage.style.width = "1150px";
-        zoneMessage.style.height = "310px";
+        zoneMessage.style.height = "315px";
         zoneMessage.style.borderTop = "1px solid #B8B8B8";
         zoneMessage.style.borderLeft = "1px solid #B8B8B8";
         zoneMessage.style.borderRight = "1px solid #B8B8B8";
@@ -314,7 +381,7 @@ class messagerie {
         const ecrireMessage = document.createElement('div');
         ecrireMessage.classList.add('ecrireMessage');
         ecrireMessage.style.width = "1050px";
-        ecrireMessage.style.height = "100px";
+        ecrireMessage.style.height = "103px";
         ecrireMessage.style.borderTop = "1px solid #B8B8B8";
         ecrireMessage.style.borderRight = "1px solid #B8B8B8";
         ecrireMessage.style.backgroundColor = "#f5f6fa";
@@ -350,9 +417,10 @@ class messagerie {
 
 document.addEventListener('DOMContentLoaded', () => {
     const boxOneInstance = new BoxOne();
-    // boxOneInstance.boxOneInstance.displayText();
+    boxOneInstance.boxOneInstance.displayText();
+    boxOneInstance.mandatInstance.displayText();
     boxOneInstance.messagerieInstance.displayText();
-    // const vehiculeInstance = new vehicule();
-    // vehiculeInstance.displayText();
-    // vehiculeInstance.openModalVehicule();
 });
+
+
+

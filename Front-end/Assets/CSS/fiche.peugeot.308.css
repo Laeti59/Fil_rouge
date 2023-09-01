@@ -1,5 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -171,6 +173,7 @@
 
 .section-one{
     width: 20%;
+    margin-top: 50px;
 }
 
 .presentation-produit{
@@ -193,6 +196,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    margin-top: 30px;
 }
 
 .mySlides {
@@ -251,11 +255,9 @@
 /* Section Two*/
 
 .section-two{
-    width: 30%;
+    width: 70%;
     display: flex;
-    margin: auto;
-    padding-right: 350px;
-    margin-top: -55px;
+    justify-content: center;
 }
 
 .titre-description{
@@ -263,8 +265,48 @@
     justify-content: space-evenly;
 }
 
+.lien-vue {
+    margin-top: 10px;
+}
+
 .descp{
     padding-right: 180px;
+}
+
+.les-infos p {
+    margin-top: 10px;
+}
+
+/* Le formulaire*/
+
+.formulaire{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+}
+
+.bloc-form{
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc-form-contenu{
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.bloc-form-contenu input{
+    width: 120%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.bloc-form-contenu textarea{
+    height: 80px;
+    width: 120%;
+    margin-bottom: 20px;
 }
 
 /* Le contenu*/
@@ -292,16 +334,12 @@
     font-style: italic;
 }
 
-.logo-tel a {
-    margin-top: -20px;
-}
-
 
 /* Les options*/
 
 .section-three{
-    width: 50%;
-    margin-top: 60px;
+    width: 60%;
+    margin-top: 100px;
 }
 
 .bloc{
@@ -317,13 +355,15 @@
     display: flex;
     justify-content: center;
     margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 div .liste-1,
 div .liste-2{
     float: left;
-    height: 400px;
-    padding: 0 10px;
+    height: 300px;
+    padding: 0 40px;
 }
 
 .liste-2{
@@ -331,38 +371,7 @@ div .liste-2{
 }
 
 
-/* Le formulaire*/
 
-.formulaire{
-    width: 30%;
-    float: right;
-    margin-top: -890px;
-    margin-right: 200px;
-}
-
-.bloc-form{
-    display: inline-block;
-    text-align: center;
-}
-
-.bloc-form-contenu{
-    width: 40%;
-    margin-left: 130px;
-    margin-top: 50px;
-}
-
-.bloc-form-contenu input{
-    width: 120%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-.bloc-form-contenu textarea{
-    height: 80px;
-    width: 120%;
-    margin-bottom: 20px;
-}
 
 .button-envoyer{
     width: 120px;
@@ -377,12 +386,10 @@ div .liste-2{
 footer {
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 300px;
-    margin-left: -8px;
-    margin-right: -8px;
+    height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -500px;
+    bottom: -330px;
     width: 100%;
 }
 

@@ -1,15 +1,15 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    /* margin: 0;
-    min-height: 5vh; */
+    margin: 0;
+    padding: 0;
 }
+
 .header {
     background: rgba(50, 50, 50, 0.35);
-    height: 130px; 
+    height: 130px;
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
-    /* backdrop-filter: blur(15px); */
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
 }
 
@@ -58,11 +58,11 @@
     margin-top: 10px;
 }
 
-.facebook{
+.facebook {
     margin-right: 3px;
 }
 
-.instagram{
+.instagram {
     margin-left: 3px;
 }
 
@@ -84,7 +84,6 @@
 .titre {
     display: flex;
     margin-left: -18px;
-    /* margin-top: 10px; */
 }
 
 .titre-logo {
@@ -104,8 +103,6 @@
 }
 
 /* Barre de Nagivation*/
-
-
 
 .info a,
 .info p {
@@ -159,185 +156,220 @@
     margin-left: 1150px;
 }
 
-.fa-user{ 
+.fa-user {
     color: white;
 }
 
-.fa-house{
+.fa-house {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-angle-down {
     color: white;
 }
 
-.fa-angle-down{
-    color: white;
-}
-
-/* Première section*/
+/* Section One*/
 
 .section-one{
-    display: flex;
-    justify-content: center;
+    width: 30%;
+    margin-top: 50px;
 }
 
-.message1{
-    font-size: 24px;
-} 
-
-.message2{
-    margin-left: 70px;
-    margin-bottom: 30px;
+.presentation-produit{
+    margin-left: 50px;
 }
 
-.message3{
-    width: 300px;
-    text-align: center;
-    color: #ff0000;
-    margin-left: 20px;
-    margin-bottom: 30px;
-}  
+.titre{
+    margin-left: 100px;
+}
 
+.h3-titre{
+    font-size: 35px;
+}
 
-/* Section deux + formulaire*/
-
-.mon-formulaire{
-    display: block;
-    width: 500px;
-    height: 300px;
-    margin-bottom: 60px;
-    border: 2px solid #B8B8B8;
+.photo {
+    margin-top: 20px;
 }
 
 
-input{
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 30px;
-    margin-left: 40px;
-    padding: 10px;
-    border: 1px solid #B8B8B8;
-    border-radius: 4px;
-}
-
-.envoyer-form{
-    width: 100px;
-    padding: 10px;
-    margin-left: 15%;
-    background-color: #5BC00B;
-    color: #ffffff;
-    border-radius: 10px;
-}
-
+/* Section Two*/
 
 .section-two{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
-}
-
-.ma-boite{
-    border: 2px solid #B8B8B8;
-    width: 450px;
-    height: 330px;
-}
-
-.adresse-boite{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 20px;
-}
-
-.tel-boite{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-}
-
-.logo-tel-boite{
-    margin-left: 20px;
-}
-
-.numero-boite{
-    text-decoration: none;
-    color: #000000;
-    margin-right: 150px;
-}
-
-.mail-boite{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logo-mail-boite{
-    margin-left: 10px;
-}
-
-.email-boite{
-    text-decoration: none;
-    color: #000000;
-    margin-right: 25px;
-}
-
-.titre-horaire{
-    font-size: 18px;
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.les-horaires {
+    width: 70%;
     display: flex;
     justify-content: center;
-    margin-right: 30px;
+    margin-top: -310px;
+}
+
+.description {
+    margin-left: 80px;
+}
+
+.titre-description{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lien-vue {
+    margin-top: 10px;
+}
+
+.descp{
+    padding-right: 180px;
+}
+
+.les-infos p {
+    margin-top: 10px;
+}
+
+/* Le contenu*/
+
+.button-360{
+    background-color: #EE1F51;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.logo-tel{
+    display: inline;
+}
+
+.numero-tel{
+    color: black;
+    text-decoration: none;
+}
+
+.BBC-section{
+    font-size: 14px;
+    margin-left: 70px;
+    font-style: italic;
+}
+
+/* Les options*/
+
+.section-three{
+    width: 60%;
+    margin-top: 70px;
+}
+
+.bloc{
+    content: "";
+    display: table;
+    clear: 0 10px;
+    border: 1px solid #B8B8B8;
+    background-color: #dcdde1;
+    margin-left: 50px;
+}
+
+.titre-bloc{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+div .liste-1,
+div .liste-2{
+    float: left;
+    height: 160px;
+    padding: 0 40px;
+    margin-top: 10px;
+}
+
+.liste-2{
+    margin-left: 80px;
+}
+
+
+/* Le formulaire*/
+
+.formulaire{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+}
+
+.bloc-form{
+    display: inline-block;
+    text-align: center;
+}
+
+.bloc-form-contenu{
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.bloc-form-contenu input{
+    width: 120%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.bloc-form-contenu textarea{
+    height: 80px;
+    width: 120%;
+    margin-bottom: 20px;
+}
+
+.button-envoyer{
+    width: 120px;
+    background-color: #EE1F51;
+    border: 1px solid #B8B8B8;
 }
 
 
 
 /* Footer*/
 
-footer{
+footer {
     margin-top: 60px;
     background: rgba(50, 50, 50, 0.35);
-    height: 400px; 
-    margin-left: -8px;
-    margin-right: -8px;
+    height: 200px;
     border-bottom: 1px solid rgba(50, 50, 50, 0.26);
     position: absolute;
-    bottom: -400px ;
+    bottom: -150px;
     width: 100%;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     justify-content: space-around;
     margin-right: 350px;
 }
 
-.coordonnees-footer{
+.coordonnees-footer {
     display: flex;
     justify-content: center;
     text-decoration: none;
-} 
+    margin-top: -160px;
+}
 
-p.nos-coordonnees{
+p.nos-coordonnees {
     color: white;
-    font-size: 24px;
-} 
+    font-size: 26px;
+}
 
 /* Logo */
 
-.info-footer{
+.info-footer {
     display: inline;
 }
 
 .logo-bbc-footer {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .titre-footer {
     display: flex;
     margin-left: -18px;
-    /* margin-top: 10px; */
 }
 
 .titre-logo-footer {
@@ -352,55 +384,54 @@ p.nos-coordonnees{
     font-size: 30px;
 }
 
-p.logo-bbc-footer  {
+p.logo-bbc-footer {
     margin-left: 5px;
 }
 
 
 /* Coordonnées footer*/
 
-.entreprise-footer{
+.entreprise-footer {
     display: inline-block;
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
 
 .adresse-footer {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 }
 
-.logo-adresse-footer{
+.logo-adresse-footer {
     margin-right: 20px;
 }
 
-.text-adresse{
+.text-adresse {
     color: white;
     margin-bottom: 20px;
 }
 
 
 
-.tel-footer{
+.tel-footer {
     display: flex;
     justify-content: center;
 }
 
-.text-tel{
+.text-tel {
     margin-right: 150px;
     margin-bottom: 30px;
 }
 
-.le-mail{
+.le-mail {
     display: flex;
     justify-content: center;
 }
 
 
-.text-mail{
+.text-mail {
     margin-right: 30px;
 }
-

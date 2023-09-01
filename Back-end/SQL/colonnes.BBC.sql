@@ -25,11 +25,11 @@ INSERT INTO `vehicules` (`veh_id`, `veh_marque`, `veh_modele`, `veh_annee`, `veh
 (2, 'Peugeot', '3008', '2018', '20 500km', 'Gris', 'Diesel', 'Automatique', '30 900€'),
 (3, 'Peugeot', '5008', '2019', '96 500km', 'Bleu Foncé', 'Diesel', 'Manuelle', '23 490€'),
 (4, 'Jeep', 'Grand Cherokee', '2017', '158 000km', 'Noir', 'Diesel', 'Automatique', '27 490€'),
-(5, 'Mercedes', 'Classe A', '2017', '90 000km', 'Bleu Foncé', 'Diesel', 'Manuelle', '22 490€'),
+(5, 'Mercedes', 'Classe A', '2017', '93 000km', 'Bleu Foncé', 'Diesel', 'Manuelle', '21 990€'),
 (6, 'Opel', 'Zafira', '2017', '168 000km', 'Noir', 'Diesel', 'Manuelle', '8 690€'),
 (7, 'Peugeot', '308', '2009', '197 200km', 'Blanc', 'Diesel', 'Manuelle', '7 490€'),
 (8, 'Opel', 'Zafira', '2010', '171 500km', 'Gris Foncé', 'Diesel', 'Manuelle', '9 990€'),
-(9, 'Ford', 'Ecosport', '2017', '104 000km', 'Blanc', 'Essence', 'Manuelle', '10 500€');
+(9, 'Ford', 'Ecosport', '2014', '104 000km', 'Blanc', 'Essence', 'Manuelle', '10 500€');
 
 
 INSERT INTO `vendre` (`ven_veh_id`, `ven_cli_id`, `ven_status`) VALUES
@@ -213,7 +213,7 @@ INSERT INTO `options_vehicules` (`opt_libelle`) VALUES
 ('Rétroviseurs rabattables électriques'),
 ('Siège réglable électrique'),
 ('Siège réglable manuel'),
-('Sièges avant avec soutien lombaire'),
+('Siège avant avec soutien lombaire'),
 ('Sièges chauffants'),
 ('Système "Flex7"'),
 ('Système anticollision'),
@@ -225,7 +225,7 @@ INSERT INTO `options_vehicules` (`opt_libelle`) VALUES
 ('Toit en verre panoramique'),
 ('Toit ouvrant'), 
 ('Vitres électriques'),
-('Vitres arrière surteintées'),
+('Vitres arrières surteintées'),
 ('Volant réglable en hauteur et en profondeur'),
 ('Volant en cuir'),
 ('Volant multifonction');
