@@ -65,7 +65,6 @@ class vehicule {
         this.name = "Mes véhicules";
         this.parentElement = parentElement;
         this.element = null;
-        // this.modal = null; 
     }
 
     displayText() {
@@ -96,11 +95,10 @@ class vehicule {
         modal.style.backgroundColor = "#ecf0f1";
         modal.style.width = "1200px";
         modal.style.paddingBlock = "40px"
-        modal.style.marginTop = "-150px";
+        modal.style.marginTop = "-180px";
         modal.style.marginLeft = "270px";
         modal.style.border = "1px solid #B8B8B8";
         modal.style.paddingLeft = "30px";
-        modal.style.paddingTop = "40px";
 
         let modalContent = document.createElement('div');
         modalContent.classList.add('modal-content');
@@ -291,7 +289,7 @@ class messagerie {
         modalMessagerie.style.backgroundColor = "#ecf0f1";
         modalMessagerie.style.width = "1200px";
         modalMessagerie.style.height = "390px";
-        modalMessagerie.style.marginTop = "-145px";
+        modalMessagerie.style.marginTop = "-180px";
         modalMessagerie.style.marginLeft = "270px";
         modalMessagerie.style.border = "1px solid #B8B8B8";
         modalMessagerie.style.paddingLeft = "30px";

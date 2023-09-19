@@ -416,18 +416,30 @@
     display: flex;
     justify-content: left;
     margin-left: 60px;
+    margin-bottom: 100px;
 }
 
 
 /* Footer*/
 
 footer {
-    margin-top: 60px;
-    background: rgba(50, 50, 50, 0.35);
+    background: url(../Image/voitures1.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
     height: 230px;
-    border-bottom: 1px solid rgba(50, 50, 50, 0.26);
-    bottom: -100px;
-    width: 100%;
+}
+
+footer::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
 }
 
 .logo-footer {
@@ -505,11 +517,13 @@ p.logo-bbc-footer {
 
 .logo-adresse-footer {
     margin-right: 20px;
+    margin-top: 5px;
 }
 
 .text-adresse {
     color: white;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -517,6 +531,10 @@ p.logo-bbc-footer {
 .tel-footer {
     display: flex;
     justify-content: center;
+}
+
+.logo-tel {
+    margin-top: 10px;
 }
 
 .text-tel {

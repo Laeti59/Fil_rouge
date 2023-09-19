@@ -33,27 +33,27 @@ function showSlides2(){
 }
 
 
-/* Menus déroulant "Nos véhicules"*/
+// /* Menus déroulant "Nos véhicules"*/
 
-let menu = document.querySelector('.menu-deroulant');
-menu.addEventListener('click', openModalMenu.bind(this));
+// let menu = document.querySelector('.menu-deroulant');
+// menu.addEventListener('click', openModalMenu.bind(this));
 
-console.log(menu);
-function openModalMenu() {
-    const modalMenu = document.createElement('div');
-    modalMenu.classList.add('modalMenu');
-    modalMenu.style.backgroundColor = '#bdc3c7';
-    modalMenu.style.width = "550px";
-    modalMenu.style.height = "250px";
-    modalMenu.style.border = "1px solid #B8B8B8";
-    modalMenu.style.marginTop = "15px";
+// console.log(menu);
+// function openModalMenu() {
+//     const modalMenu = document.createElement('div');
+//     modalMenu.classList.add('modalMenu');
+//     modalMenu.style.backgroundColor = '#bdc3c7';
+//     modalMenu.style.width = "550px";
+//     modalMenu.style.height = "250px";
+//     modalMenu.style.border = "1px solid #B8B8B8";
+//     modalMenu.style.marginTop = "15px";
 
-    const info = document.querySelector('.info');
-    info.appendChild(modalMenu);
+//     const info = document.querySelector('.info');
+//     info.appendChild(modalMenu);
 
     
 
-    // console.log(modalMenu);
-}
+//     // console.log(modalMenu);
+// }
 
-console.log("ici" + openModalMenu());
+// console.log("ici" + openModalMenu());

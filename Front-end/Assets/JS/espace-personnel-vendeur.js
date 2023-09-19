@@ -49,10 +49,13 @@ class BoxOne {
         boxOne.classList.add('BoxOne');
         document.body.appendChild(boxOne);
 
-        this.boxOneInstance = new vehicule(boxOne);
+        this.vehiculeInstance = new vehicule(boxOne);
         this.mandatInstance = new mandat(boxOne);
         this.messagerieInstance = new messagerie(boxOne);
-        // this.boxOneInstance.openModalVehicule();
+
+        this.vehiculeInstance.displayText();
+        this.mandatInstance.displayText();
+        this.messagerieInstance.displayText();
     }
 }
 
@@ -79,13 +82,13 @@ class vehicule {
 
     openModalVehicule() {
 
-        if (this.parentElement.parentElement.modal) {
-            return;
+
+        if (currentModal !== null) {
+            currentModal.remove();
         }
 
-        if (this.parentElement.parentElement.currentModal) {
-            this.parentElement.parentElement.currentModal.remove();
-        }
+        const titleElement = document.querySelector('.main-title');
+    titleElement.classList.add('title-hidden');
 
 
         /* La modal*/
@@ -182,7 +185,7 @@ class vehicule {
 
         modal.appendChild(modalContent);
 
-        this.parentElement.parentElement.currentModal = modal;
+        currentModal = modal;
 
         this.parentElement.appendChild(modal);
     }
@@ -209,14 +212,14 @@ class mandat {
 
     openModalMandat() {
 
-        if (this.parentElement.parentElement.modalMandat) {
-            console.this
-            return;
+        if (currentModal !== null) {
+            currentModal.remove();
         }
 
-        if (this.parentElement.parentElement.currentModal) {
-            this.parentElement.parentElement.currentModal.remove();
-        }
+        const titleElement = document.querySelector('.main-title');
+    titleElement.classList.add('title-hidden')
+
+        /*La modal*/
 
         const modalMandat = document.createElement('div');
         modalMandat.classList.add('modalMandat');
@@ -311,7 +314,7 @@ class mandat {
 
         modalMandat.appendChild(modalContent);
 
-        this.parentElement.parentElement.currentModal = modalMandat;
+        currentModal = modalMandat;
 
         this.parentElement.appendChild(modalMandat);
     }
@@ -339,9 +342,13 @@ class messagerie {
 
     openModalMessagerie() {
 
-        if (this.parentElement.parentElement.currentModal) {
-            this.parentElement.parentElement.currentModal.remove();
+        if (currentModal !== null) {
+            currentModal.remove();
         }
+
+        const titleElement = document.querySelector('.main-title');
+    titleElement.classList.add('title-hidden');
+
 
         /*La modal*/
 
@@ -411,16 +418,31 @@ class messagerie {
         zoneMessage.appendChild(ecrireMessage);
         ecrireMessage.appendChild(indication);
         ecrireMessage.appendChild(fleche);
+
+
+        currentModal = modalMessagerie;
+
+        this.parentElement.appendChild(modalMessagerie);
     }
 }
 
 
+let currentModal = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     const boxOneInstance = new BoxOne();
-    boxOneInstance.boxOneInstance.displayText();
-    boxOneInstance.mandatInstance.displayText();
-    boxOneInstance.messagerieInstance.displayText();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const titleElement = document.querySelector('.main-title');
+});
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const boxOneInstance = new BoxOne();
+//     boxOneInstance.boxOneInstance.displayText();
+//     boxOneInstance.mandatInstance.displayText();
+//     boxOneInstance.messagerieInstance.displayText();
+// });
 
 
 

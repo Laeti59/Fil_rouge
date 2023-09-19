@@ -125,7 +125,8 @@ CREATE TABLE IF NOT EXISTS `occuper` (
     `occ_emp_id` INT NOT NULL,
     `occ_pos_id` INT NOT NULL,
     CONSTRAINT FK_OCCUPER_EMPLOYEE FOREIGN KEY (occ_emp_id) REFERENCES employees (emp_id),
-    CONSTRAINT FK_OCCUPER_POSTS FOREIGN KEY (occ_pos_id) REFERENCES posts (pos_id)
+    CONSTRAINT FK_OCCUPER_POSTS FOREIGN KEY (occ_pos_id) REFERENCES posts (pos_id),
+    UNIQUE KEY `unique_employee_occupation` (`occ_emp_id`)
 );
 
 DROP TABLE IF EXISTS `illustrer`;
