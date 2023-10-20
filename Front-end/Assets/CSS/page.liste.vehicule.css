@@ -46,11 +46,13 @@ header::before {
 /* Mise en forme des coordonées en haut de la page avec leur logo. */
 .coordonnées-haut {
     display: flex;
-    color: white;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .adresse {
-    margin-left: 350px;
+    /* margin-left: 350px; */
+    margin-left: 20px;
     margin-top: 20px;
 }
 
@@ -82,7 +84,7 @@ header::before {
 }
 
 .logo {
-    margin-left: 50px;
+    margin-left: 10px;
     size: 18px;
     margin-top: 10px;
 }
@@ -101,12 +103,15 @@ header::before {
 /* Logo BBC*/
 
 .info {
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .logo-bbc {
     display: flex;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     margin-top: 15px;
 }
 
@@ -145,46 +150,31 @@ header::before {
     font-size: 16.5px;
 }
 
-.lien-vendeur {
-    display: flex;
-    justify-content: center;
-    margin-left: -380px;
-    margin-top: -35px;
-    font-size: 16.5px;
-}
-
 .menu-deroulant {
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    /* margin-left: 180px; */
     margin-top: -20px;
 }
 
 .logo-home {
     display: flex;
     justify-content: center;
-    margin-left: 930px;
+    /* margin-left: 930px; */
     margin-top: -15px;
-}
-
-.lien-acheteur {
-    display: flex;
-    justify-content: center;
-    margin-left: 650px;
-    margin-top: -25px;
 }
 
 .connection {
     display: flex;
     justify-content: center;
-    margin-left: 1150px;
+    /* margin-left: 1150px; */
     margin-top: -45px;
 }
 
 .message-connection {
     display: flex;
     justify-content: center;
-    margin-left: 1150px;
+    /* margin-left: 1150px; */
 }
 
 .fa-user {

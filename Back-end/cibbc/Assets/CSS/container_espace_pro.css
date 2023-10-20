@@ -1,0 +1,43 @@
+.titre-bienvenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.vehicules,
+.client,
+.employes {
+    float: left;
+    height: 390px;
+    width: 23%;
+    padding: 0 10px;
+}
+
+.client {
+    width: 23%;
+}
+
+.sous-titre {
+    margin-bottom: 30px;
+}
+
+.vehicules li,
+.client li,
+.employes li {
+    margin-bottom: 10px;
+}
+
+.vehicules li a,
+.client li a,
+.employes li a {
+    text-decoration: none;
+    color: black !important;
+}
+

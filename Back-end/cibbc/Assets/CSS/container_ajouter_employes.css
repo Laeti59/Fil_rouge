@@ -1,0 +1,79 @@
+.explication {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.fleche {
+    margin-left: 150px;
+}
+
+.explication p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.groupe1,
+.groupe2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.groupe1 .form-group,
+.groupe2 .form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 200px;
+    padding: 5px;
+}
+
+.vide {
+    border: none !important;
+}
+
+.id {
+    display: none;
+}
+
+.checkbox {
+    border: none !important;
+}
+
+.invalid-field {
+    border: 1px solid red;
+}
+
+
+.bouton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #D00748;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #D00748;
+    border-radius: 100px 100px 100px 100px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 57px;
+}

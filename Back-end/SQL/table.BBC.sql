@@ -50,6 +50,13 @@ CREATE TABLE IF NOT EXISTS `employees` (
     CONSTRAINT FK_EMPLOYEES_AGENCE FOREIGN KEY (emp_age_id) REFERENCES agence (age_id)
 );
 
+DROP TABLE IF EXISTS `utilisateurs`;
+CREATE TABLE IF NOT EXISTS `utilisateurs` (
+    `uti_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `uti_nom_utilisateur` varchar(50) NOT NULL,
+    `uti_mot_de_passe` varchar(255) NOT NULL
+); 
+
 DROP TABLE IF EXISTS `vehicules`;
 CREATE TABLE IF NOT EXISTS `vehicules` (
     `veh_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -136,4 +143,14 @@ CREATE TABLE IF NOT EXISTS `illustrer` (
     `ill_pho_id` INT NOT NULL,
     CONSTRAINT FK_ILLUSTRER_VEHICULE FOREIGN KEY (ill_veh_id) REFERENCES vehicules (veh_id),
     CONSTRAINT FK_ILLUSTRER_PHOTOS FOREIGN KEY (ill_pho_id) REFERENCES photos (pho_id)
+);
+
+DROP TABLE IF EXISTS `messagerie`;
+CREATE TABLE IF NOT EXISTS `messagerie` (
+    `mes_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `mes_contenu` varchar(255) NOT NULL,
+    `mes_emp_id` INT NOT NULL,
+    `mes_cli_id` INT NOT NULL,
+    CONSTRAINT FK_MESSAGERIE_EMPLOYEES FOREIGN KEY (mes_emp_id) REFERENCES employees (emp_id),
+    CONSTRAINT FK_MESSAGERIE_CLIENTS FOREIGN KEY (mes_cli_id) REFERENCES clients (cli_id)
 );

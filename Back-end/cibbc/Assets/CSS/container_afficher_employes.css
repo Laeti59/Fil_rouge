@@ -1,0 +1,30 @@
+.haut-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fleche {
+    margin-left: 150px;
+}
+
+.titre-vehicule {
+    display: flex;
+    justify-content: center;
+}
+
+.afficher-liste {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+.afficher-liste table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.afficher-liste table th, .afficher-liste table td {
+    border: 1px solid grey;
+    padding: 15px; 
+    text-align: center;
+}

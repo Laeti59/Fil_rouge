@@ -20,6 +20,9 @@ INSERT INTO `employees` (`emp_nom`, `emp_prenom`, `emp_adresse`, `emp_zipcode`, 
 ('COSTEAUX', 'Morgan', '11 rue du Jardin Public', '59235', 'Bercée', '06.51.53.65.32', 'm.costeaux@bye-buy-car.com', 1),
 ('SURIN', 'Benjamin', '24 rue Pasteur', '59113', 'Seclin', '0756431212', 'benjamin.surin@bye-buy-car.com', 1);
 
+INSERT INTO `utilisateurs` (`uti_nom_utilisateur`, `uti_mot_de_passe`) VALUES
+('morgan.c', '$mot_de_passe_hache');
+
 INSERT INTO `vehicules` (`veh_id`, `veh_marque`, `veh_modele`, `veh_annee`, `veh_kilometre`, `veh_couleur`, `veh_carburant`, `veh_transmission`, `veh_prix`) VALUES
 (1, 'Citroën', 'Aircross Shine', '2019', '12 900km', 'noir', 'Essence', 'Manuelle', '18 900€'),
 (2, 'Peugeot', '3008', '2018', '20 500km', 'Gris', 'Diesel', 'Automatique', '30 900€'),

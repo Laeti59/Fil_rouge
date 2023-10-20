@@ -1,0 +1,65 @@
+.title-container{
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.title-hidden {
+    display: none;
+}
+
+/* Mise en place nom et prénom du conseillé et du client*/
+
+.contact {
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.client {
+    margin-top: -40px;
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+}
+
+
+
+/* Mise en place des rubriques*/
+
+.BoxOne{
+    margin-top: 100px;
+    display: block;
+    width: 8%;
+    border-right: 1px solid #B8B8B8;
+    height: 185px;
+    margin-left: 10px;
+} 
+
+.vehicule{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.mandat{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.messagerie{
+    border-bottom: 1px solid #B8B8B8;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    cursor: pointer;
+} 

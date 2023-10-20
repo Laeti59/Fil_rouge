@@ -85,7 +85,7 @@ class vehicule {
         }
 
         const titleElement = document.querySelector('.main-title');
-    titleElement.classList.add('title-hidden');
+        titleElement.classList.add('title-hidden');
 
 
         /* La modal*/
@@ -223,7 +223,7 @@ class vehicule {
         /* En cours de préparation*/
 
         let preparation = document.createElement('p');
-        preparation.textContent = "Prépartion du virement";
+        preparation.textContent = "Prépartion du véhicule";
         preparation.style.width = "20%";
         divTexte.appendChild(preparation);
 

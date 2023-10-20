@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dce549eaed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Assets/CSS/page-acceuil.css">
+    <link rel="stylesheet" href="../page-acceuil.css">
+    <link rel="stylesheet" href="../Assets/CSS/popup-connection.css">
+    <!-- <link rel="stylesheet" href="../Assets/CSS/popup-occasion.css"> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Jomolhari&family=Lato:ital,wght@0,100;1,100&family=Nuosu+SIL&family=Open+Sans:wght@300&display=swap');
     </style>
@@ -17,18 +19,26 @@
 </head>
 
 <body>
+    
     <header class="header">
 
         <!-- Mise en place des coordonées en haut de la page avec leur logo. -->
         <div class="coordonnées-haut">
+
+            <div class="logo-home">
+                <a href="../HTML/page-acceuil.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+
             <div class="adresse">
                 <i class="fa-solid fa-envelope fa-beat"></i>
                 <a class="mail" href="mailto:m.costeaux@bye-buy-car.com">m.costeaux@bye-buy-car.com</a>
             </div>
+
             <div class="telephone">
                 <i class="fa-solid fa-phone fa-beat"></i>
                 <a class="numero" href="tel:+06.51.53.65.32">06.51.53.65.32</a>
             </div>
+
             <div class="logo">
                 <a href="https://www.facebook.com/profile.php?id=100084686411227" target="_blank">
                     <img src="../Assets/Image/icons8-facebook-48.png" alt="" width="35" height="35"></a>
@@ -40,43 +50,62 @@
 
         <!--Mise en place du logo et de la barre de navigation-->
         <div class="info">
+
+            <div class="menu-deroulant">
+                <p id="openModal">Nos véhicules d'occasion</p>
+                <!-- <i class="fa-solid fa-angle-down"></i>    -->
+            </div>
+
+
+
             <div class="logo-bbc">
                 <img class="img-bbc" src="../Assets/Image/logo BBC.png" alt="Logo BBC" width="130" height="80">
                 <div class="titre">
-                    <p class="titre-logo">BYE</p>
+                    <a href="../HTML/page-acceuil.html">
+                        <p class="titre-logo">BYE</p>
+                    </a>
                     <p class="separation">|</p>
-                    <p class="titre-logo">BUY</p>
+                    <a href="../HTML/page-acceuil.html">
+                        <p class="titre-logo">BUY</p>
+                    </a>
                     <p class="separation">|</p>
-                    <p class="titre-logo">CAR</p>
+                    <a href="../HTML/page-acceuil.html">
+                        <p class="titre-logo">CAR</p>
+                    </a>
+                    <p class="separation">|</p>
+                    <a href="../HTML/page-acceuil.html">
+                        <p class="titre-logo">LILLE</p>
+                    </a>
                 </div>
             </div>
-            <div class="lien-vendeur">
-                <a href="">Vous désirez vendre votre véhicule ?</a> <!--Mettre le lien de la page vendeur-->
-            </div>
-            <div class="menu-deroulant">
-                <a href="">Nos véhicules d'occasion
-                    <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
-                    <!--Mettre le lien de la page menu déroulant-->
-                </a>
-            </div>
-            <div class="logo-home">
-                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-            </div>
-            <div class="lien-acheteur">
-                <a href="">Vous désirez acheter ? <br> Contactez-nous !</a> <!--Mettre le lien page acheteur-->
-            </div>
-            <div class="connection">
-                <a href="" target="_blank">
-                    <i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
-                <!--Mettre le lien de pop-up connection-->
-            </div>
-            <div class="message-connection">
-                <a href="" target="_blank">Je me connecte</a> <!--Mettre le lien de pop-up connection-->
-            </div>
 
+            <div class="connection-ouvrir-popup">
+                <div class="connection">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                </div>
+
+                <div id="ouvrirPopup">
+                    <p> Je me connecte </p>
+                </div>
+            </div>
         </div>
 
     </header>
+
+    <!--Ici les deux boutons achat et vente-->
+    <section>
+        <div class="achat-vente">
+
+            <div class="lien-vendeur">
+                <a href="../HTML/etre-recontacté-vendeur.html"><span>Je veux vendre</span></a>
+            </div>
+
+            <div class="lien-acheteur">
+                <a href="../HTML/etre-recontacté-acheteur.html"><span>Je veux acheter</span></a>
+            </div>
+        </div>
+    </section>
+
 
     <!--Ici un carousel qui va prendre la totalité de la page avant de scroller-->
 
@@ -85,6 +114,8 @@
         <div class="mySlides"><img src="../Assets/Image/Citroën C3 AIRCROSS SHINE.jpg" alt="Citroën C3"></div>
         <div class="mySlides"><img src="../Assets/Image/KIA SPORTAGE 7 CRDI.jpg" alt="KIA SPORTAGE"></div>
     </div>
+
+
 
     <!--En dessous du carousel, des informations concernant l'entreprise BBC-->
 
@@ -98,14 +129,15 @@
                         <h2 class="nom-societe">Bye Buy Car Lille</h2>
                         <div class="separteur"></div>
                         <div class="separteur-2"></div>
-                        <h2 class="titre-2"> Trois bonne raisons de faire appel à nos agents auto-mobile</h2>
+                        <h2 class="titre-2"> Trois bonnes raisons de faire appel à nos agents automobile</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="feature">
                             <div class="icon">
-                                <img src="../Assets/Image/icons8-speedometer-48.png" alt="speedometer" width="50" height="50">
+                                <img src="../Assets/Image/icons8-speedometer-48.png" alt="speedometer" width="50"
+                                    height="50">
                             </div>
                             <div class="content">
                                 <h3 class="titre-3">Efficacité</h3>
@@ -170,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="separator_2"></div>
 
             </div>
@@ -187,9 +219,9 @@
             <div class="text-proposition">
                 <div class="le-text">
                     <p class="decouvrir">
-                        Découvrez nos dernières offres de 
+                        Découvrez nos dernières offres de
                     </p>
-                    <h2 class="vehicule-proposition">Véhicules d'occasions</h2>
+                    <h2 class="vehicule-proposition">Véhicules d'occasion</h2>
                 </div>
             </div>
 
@@ -199,7 +231,7 @@
             <div class="les-blocs">
                 <div class="bloc-1">
                     <div class="photo-véhicule-1">
-                        <img src="../Assets/Voiture/Peugeot 3008/photo.jpg" alt="Peugeot 3008"  width="250" height="220">
+                        <img src="../Assets/Voiture/Peugeot 3008/photo.jpg" alt="Peugeot 3008" width="250" height="220">
                     </div>
                     <div class="description">
                         <p class="nom">Peugeot 3008</p>
@@ -213,7 +245,8 @@
 
                 <div class="bloc-2">
                     <div class="photo-véhicule-2">
-                        <img src="../Assets/Voiture/Jeep Grand Cherkoee/photo.jpg" alt="Jeep Grand Cherkoee" width="250" height="220">
+                        <img src="../Assets/Voiture/Jeep Grand Cherkoee/photo.jpg" alt="Jeep Grand Cherkoee" width="250"
+                            height="220">
                     </div>
                     <div class="description-2">
                         <p class="nom-2">Jeep Grand Cherkoee</p>
@@ -243,7 +276,8 @@
 
                 <div class="bloc-4">
                     <div class="photo-véhicule-4">
-                        <img src="../Assets/Voiture/Citroën C3 Aircross/photo.jpg" alt="Citroën C3 Aircross" width="250" height="220">
+                        <img src="../Assets/Voiture/Citroën C3 Aircross/photo.jpg" alt="Citroën C3 Aircross" width="250"
+                            height="220">
                     </div>
                     <div class="description-4">
                         <p class="nom-4">Citroën C3 Aircross</p>
@@ -368,5 +402,7 @@
 </body>
 
 <script src="../Assets/JS/page-acceuil.js"></script>
+<script src="../Assets/JS/pop-connection.js"></script>
+<!-- <script src="../Assets/JS/popup-occasion.js"></script> -->
 
 </html>

@@ -1,0 +1,310 @@
+/* Ici les deux boutons achat et vente */
+.achat-vente {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    margin-left: 550px;
+    margin-top: 800px;
+
+}
+
+.lien-vendeur {
+    font-family: "Raleway", Sans-serif;
+    background-color: #D00748;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #D00748;
+    border-radius: 100px 100px 100px 100px;
+    margin-left: 100px;
+    padding: 10px 20px;
+}
+
+.lien-vendeur a {
+    text-decoration: none;
+}
+
+.lien-vendeur span {
+    color: white;
+    font-size: 32px;
+}
+
+.lien-acheteur {
+    font-family: "Raleway", Sans-serif;
+    background-color: #A9DCF2;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #A9DCF2;
+    border-radius: 100px 100px 100px 100px;
+    margin-left: 100px;
+    padding: 10px 20px;
+}
+
+.lien-acheteur a {
+    text-decoration: none;
+}
+
+.lien-acheteur span {
+    color: black;
+    font-size: 32px;
+}
+
+
+/* Carousel*/
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mySlides:nth-child(1) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(2) {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySlides:nth-child(3) {
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Informations concernant l'entreprise*/
+
+.welcome {
+    display: flex;
+    width: auto;
+    height: 200px;
+    margin: auto;
+}
+
+.achat {
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.bienvenu{
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+.nom-societe{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.separteur{
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid #C51919;
+    width: 15%;
+}
+
+.separteur-2{
+    display: flex;
+    margin: auto;
+    margin-top: 8px;
+    border-bottom: 1px solid #C51919;
+    width: 10%;
+}
+
+.titre-2{
+    padding-top: 50px;
+    font-weight: 100;
+    line-height: 70px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+
+.informations{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: inline;
+    float: left;
+    width: 30%;
+    margin-left: 40px;
+}
+
+.col{
+    flex-basis: 30%;
+    max-width: 100%;
+}
+
+.feature{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    color: #999999;
+}
+
+.titre-3{
+    font-style: normal;
+    text-decoration: none;
+    font-weight: none;
+}
+
+.row-2{
+    display: inline-block;
+    text-align: center;
+}
+
+.call{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-2 a{
+    display: block;
+    text-decoration: none;
+    color: #C51919;
+    font-size: 28px;
+}
+
+.numero{
+    display: flex;
+    margin-top: 20px;
+}
+
+.question{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+}
+
+.separator_2 {
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid #C51919;
+    width: 70%;
+}
+
+/* Les offres de BBC*/
+
+.proposition-vehicule{
+    margin-top: 580px;
+    display: flex;
+    justify-content: center;
+}
+
+.decouvrir{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.vehicule-proposition {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.les-blocs .bloc-1,
+.les-blocs .bloc-2,
+.les-blocs .bloc-3,
+.les-blocs .bloc-4 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.les-blocs{
+    text-align: center;
+}
+
+/* Les avis clients */
+
+.separator{
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid #C51919;
+    width: 70%;
+}
+
+#avis-clients {
+    margin-top: 80px;
+}
+
+#titre1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#titre2 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+#les_avis {
+    padding-top: 30px;
+    width: 100%;
+}
+
+#bloc_avis1 {
+    float: left;
+    margin-left: 70px;
+}
+
+#bloc_avis3 {
+    margin-left: 60%;
+}
+
+#les_avis2 {
+    width: 100%;
+}
+
+#bloc_avis2 {
+    display: flex;
+    justify-content: left;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}

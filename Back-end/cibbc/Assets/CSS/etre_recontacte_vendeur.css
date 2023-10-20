@@ -1,0 +1,94 @@
+.section-one{
+    display: flex;
+    justify-content: center;
+}
+
+.message1{
+    margin-top: 50px;
+    font-size: 24px;
+} 
+
+.message2{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.message3{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}  
+
+.petit-message{
+    width: 300px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.message4{
+    color: #ff0000;
+}
+
+
+/* Section deux + formulaire*/
+
+.mon-formulaire{
+    display: block;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 60px;
+    border: 2px solid #B8B8B8;
+}
+
+
+input{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+}
+
+.envoyer-form{
+    width: 100px;
+    padding: 10px;
+    margin-left: 15%;
+    background-color: #5BC00B;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.section-two{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.titre-coord {
+    margin-left: 80px;
+}
+
+.ma-boite{
+    border: 2px solid #B8B8B8;
+    width: 450px;
+    height: 300px;
+}
+
+.titre-list{
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.list-doc {
+    padding-left: 40px;
+}
+
+.list-doc li{
+    margin-top: 20px;
+}

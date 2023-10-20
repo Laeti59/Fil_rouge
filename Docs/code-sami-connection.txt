@@ -1,0 +1,45 @@
+public function connexion(){
+
+        $this->load->helper('url'); 
+
+        $styleADMIN = "ADMIN";
+
+        if ($this->input->post()){
+
+            $email = $this->input->post("use_mail");
+
+            // var_dump($email);
+
+            $password = $this->input->post("use_password");
+
+            // var_dump($password);
+
+            // var_dump($client); 
+
+            $this->load->model("UserModel");
+
+            $userData = $this->UserModel->getUserByEmail($email)[0]; # Recupere l'input mail 
+
+            // var_dump($userData);
+
+
+
+            if (($userData->use_mail==$email) and ($userData->use_password==$password)){
+
+                # set_userdata permet d'ajouter une ligne dans le tableau session 
+
+                $this->session->set_userdata("log_Name", $userData->use_lastname);
+
+                $this->session->set_userdata("log_Mail", $userData->use_mail);
+
+                $this->session->set_userdata("log_Role", "ADMINISTRATEUR");
+
+                // $this->session->unset("log_Role");  # pour la deconnexion
+
+                $this->compte();
+
+                var_dump($this->session);
+
+                
+
+            }else {
