@@ -1,13 +1,13 @@
 // Fonction qui permet d'empêcher l'envoi du formulaire si tous les champs ne sont rempli.
 // Cette fonction permet aussi de d'indiquer à quel endroit le champ n'est pas valide.
-document.getElementById("nouveau_client").addEventListener("change", function() {
-    var clientForm = document.getElementById("nouveau_client_form");
+
+document.getElementById("client_existant").addEventListener("change", function() {
+    var clientFormExistant = document.getElementById("client_existant_form");
     if (this.checked) {
-        clientForm.style.display = "block";
-        document.getElementById("vehicule").value = document.getElementById("marque").value + " " + document.getElementById("modele").value;
-    } else {
-        clientForm.style.display = "none";
-        document.getElementById("vehicule").value = "";
+        clientFormExistant.style.display = "block";
+    } 
+    else {
+        clientFormExistant.style.display = "none";
     }
 });
 
@@ -18,9 +18,7 @@ function submitForm(event) {
         if (
             (inputs[i].value === '') &&
             inputs[i].type !== 'file' &&
-            !inputs[i].classList.contains('checkbox') &&
-            inputs[i].id !== 'nouveau_client'
-            (document.getElementById('nouveau_client_form').style.display !== 'block' || inputs[i].form === undefined || inputs[i].form.id !== 'nouveau_client_form')
+            !inputs[i].classList.contains('checkbox')
         ) {
             emptyFields.push(inputs[i].name);
             inputs[i].classList.add('invalid-field');
@@ -40,9 +38,3 @@ function submitForm(event) {
 
     alert('Le véhicule a été créé avec succès!');
 }
-
-
-
-
-
-

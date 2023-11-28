@@ -17,7 +17,7 @@
     </div>
 </section>
 
-<form action="<?= site_url('Crud/ajouterVehicule') ?>" method="post" onsubmit="return submitForm(event)">
+<form action="<?= site_url('Crud/ajouterVehicule') ?>" method="post" onsubmit="return submitForm(event)" enctype="multipart/form-data">
 
     <div class="container">
 
@@ -42,9 +42,12 @@
                 <label for="kilometrage">Kilométrage:</label>
                 <input type="text" id="kilometrage" name="kilometrage">
             </div>
+            <div>
+                <input type="file" class="images" name="images[]" multiple accept=".png, .jpg, .jpeg"><br><br>
+            </div>
             <div class="form-group-checkbox">
-            <label for="nouveau_client">Cocher la case si ce véhicule est associé à un nouveau client ?</label>
-            <input type="checkbox" id="nouveau_client" class="nouveau_client" name="nouveau_client">
+            <label for="client_existant">Cocher la case si ce véhicule est associé à un client existant ?</label>
+            <input type="checkbox" id="client_existant" class="client_existant" name="client_existant">
             </div>
         </div>
 
@@ -69,76 +72,58 @@
                 <label for="prix">Prix:</label> 
                 <input type="text" id="prix" name="prix">
             </div>
-
-            
-
-            <div>
-                <input type="file" class="image" name="images[]" multiple accept=".png, .jpg, .jpeg">
+            <div class="form-group">
+            <label for="options" class="titre-opt" >Options du véhicule :</label><br>
+            <select name="options[]" id="options" multiple="multiple">
+                <?php foreach ($liste_options as $option) : ?>
+                    <option value="<?php echo $option->opt_id; ?>">
+                        <?php echo $option->opt_libelle; ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
             </div>
         </div>
 
     </div>
 
-<div id="nouveau_client_form" style="display:none;">
+    <div id="client_existant_form" class="afficher-liste" style="display:none;">
 
-
-    <div class="container">
-
-        <div class="groupe1">
-            <div class="form-group">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom">
-            </div>
-            <div class="form-group">
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom">
-            </div>
-            <div class="form-group">
-                <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse">
-            </div>
-            <div class="form-group">
-                <label for="zipcode">Code Postal:</label>
-                <input type="text" id="zipcode" name="zipcode">
-            </div>
-            <div class="form-group">
-                <label for="ville">Ville:</label>
-                <input type="text" id="ville" name="ville">
-            </div>
-        </div>
-        <div class="groupe2">
-            
-            <div class="form-group">
-                <label for="phone">Téléphone:</label>
-                <input type="text" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="mail">Mail:</label>
-                <input type="text" id="mail" name="mail">
-            </div>
-            <div class="form-group">
-                <label for="vehicule">Véhicule:</label>
-                <input type="text" id="vehicule" name="vehicule">
-            </div>
-            <div class="form-group">
-                <label for="login">Login:</label>
-                <input type="text" id="login" name="login">
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="text" id="password" name="password">
-            </div>
-            
-        </div>
+        <?php if(!empty($liste)): ?>
+            <table>
+                <tr>
+                    <th class="vide"></th>
+                    <th class="id"></th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>Code Postal</th>
+                    <th>Ville</th>
+                    <th>Téléphone</th>
+                    <th>Mail</th>
+                </tr>
+                <?php foreach($liste as $client): ?>
+                <tr id="recuperer<?= $client->cli_id ?>">
+                    <td class="checkbox"><input type="checkbox" class="multi" name="checkboxId[]" id="checkboxId<?= $client->cli_id ?>" value="<?= $client->cli_id ?>"></td>
+                    <td class="id"><?= $client->cli_id ?></td>
+                    <td class="nom"><?= $client->cli_nom ?></td>
+                    <td class="prenom"><?= $client->cli_prenom ?></td>
+                    <td class="adresse-class"><?= $client->cli_adresse ?></td>
+                    <td class="zipcode"><?= $client->cli_zipcode ?></td>
+                    <td class="ville"><?= $client->cli_ville ?></td>
+                    <td class="phone"><?= $client->cli_phone ?></td>
+                    <td class="mail-class"><?= $client->cli_mail ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php endif; ?>
 
     </div>
-
-</div>
-
 
     <input class="bouton" type="submit" value="Ajouter Véhicule">
 </form>
 
 <script src="<?= base_url('Assets/JS/formulaire_ajout_vehicule')?>"></script>
+<script src="<?= base_url('Assets/JS/openPopup')?>"></script>
+
 </body>
 </html>

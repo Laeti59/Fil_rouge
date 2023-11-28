@@ -11,9 +11,13 @@
 <section>
 <div class="titre-bienvenu">
     <?php if (!empty($nom)): ?>
-        <h2 class="nom_pro"> Bienvenue <?php echo $nom[0]->emp_nom . " " . $nom[0]->emp_prenom; ?></h2>
+        <h2 class="nom_pro"> Bienvenue <?php echo $nom . " " . $prenom; ?></h2>
     <?php endif; ?>
 </div>
+
+<a href="<?php echo base_url('EspacePro/deconnexion'); ?>">
+<p class="deconnection">Déconnexion</p>
+</a>
 
 <div class="contenu">
     <div class="vehicules">

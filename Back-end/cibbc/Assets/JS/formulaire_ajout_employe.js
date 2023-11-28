@@ -17,5 +17,5 @@ function submitForm(event) {
         }
         return false;
     }
-    alert('Le véhicule a été créé avec succès!');
+    alert('Le nouvel employé a été créé avec succès!');
 }

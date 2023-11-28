@@ -14,6 +14,11 @@ function valueTransfer(event) {
     ville = parent.getElementsByClassName("ville")[0].innerText;
     phone = parent.getElementsByClassName("phone")[0].innerText;
     mail = parent.getElementsByClassName("mail-class")[0].innerText;
+    loginElement = parent.getElementsByClassName("login")[0];
+    passwordElement = parent.getElementsByClassName("password")[0];
+
+    var login = loginElement.innerText;
+    var password = passwordElement.innerText;
 
     document.getElementById("nom").value = nom;
     document.getElementById("prenom").value = prenom;
@@ -22,6 +27,8 @@ function valueTransfer(event) {
     document.getElementById("ville").value = ville;
     document.getElementById("phone").value = phone;
     document.getElementById("mail").value = mail;
+    document.getElementById("login").value = login;
+    document.getElementById("password").value = password;
 }
 
 var checkboxes = document.querySelectorAll('.checkbox input[type="checkbox"]');

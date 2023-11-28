@@ -15,32 +15,34 @@
         <h2 class="titre-vehicule">Les clients</h2>
     </div>
 
-        <div class="afficher-liste">
-            <?php if(!empty($liste)): ?>
-                <table>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Adresse</th>
-                        <th>Code Postal</th>
-                        <th>Ville</th>
-                        <th>Téléphone</th>
-                        <th>Mail</th>
-                    </tr>
-                    <?php foreach($liste as $client): ?>
-                    <tr>
-                        <td><?= $client->cli_nom ?></td>
-                        <td><?= $client->cli_prenom ?></td>
-                        <td><?= $client->cli_adresse ?></td>
-                        <td><?= $client->cli_zipcode ?></td>
-                        <td><?= $client->cli_ville ?></td>
-                        <td><?= $client->cli_phone ?></td>
-                        <td><?= $client->cli_mail ?></td>
-                    </tr>
-                    <?php endforeach; ?>
-                </table>
-            <?php endif; ?>
-</div>
+    <div class="afficher-liste">
+        <?php if(!empty($liste)): ?>
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>Code Postal</th>
+                    <th>Ville</th>
+                    <th>Téléphone</th>
+                    <th>Mail</th>
+                    <th>Véhicules</th>
+                </tr>
+                <?php foreach($liste as $client): ?>
+                <tr>
+                    <td><?= $client->cli_nom ?></td>
+                    <td><?= $client->cli_prenom ?></td>
+                    <td><?= $client->cli_adresse ?></td>
+                    <td><?= $client->cli_zipcode ?></td>
+                    <td><?= $client->cli_ville ?></td>
+                    <td><?= $client->cli_phone ?></td>
+                    <td><?= $client->cli_mail ?></td>
+                    <td><?= $client->vehicules ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php endif; ?>
+    </div>
 
 </section>
 </body>

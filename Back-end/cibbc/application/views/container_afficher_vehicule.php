@@ -27,6 +27,9 @@
                         <th>Carburant</th>
                         <th>Transmission</th>
                         <th>Prix</th>
+                        <th>Nom du client</th>
+                        <th>Prénom du client</th>
+                        <th>Options du véhicule</th>
                     </tr>
             <?php foreach($liste as $vehicule): ?>
                 <tr>
@@ -38,11 +41,14 @@
                     <td><?= $vehicule->veh_carburant ?></td>
                     <td><?= $vehicule->veh_transmission ?></td>
                     <td><?= $vehicule->veh_prix ?></td>
+                    <td><?= $vehicule->cli_nom ?></td>
+                    <td><?= $vehicule->cli_prenom ?></td>
+                    <td><pre><?= $vehicule->options ?></pre></td>
                 </tr>
             <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-</div>
+                </table>
+            <?php endif; ?>
+        </div>
 
 </section>
 </body>

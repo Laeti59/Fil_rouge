@@ -2,7 +2,7 @@ function submitForm(event) {
     var inputs = document.getElementsByTagName('input');
     var emptyFields = [];
     for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === '') {
+        if (inputs[i].value === '' && inputs[i].name !== 'vehicule') {
             emptyFields.push(inputs[i].name);
             inputs[i].classList.add('invalid-field');
         } else {
@@ -17,5 +17,5 @@ function submitForm(event) {
         }
         return false;
     }
-    alert('Le véhicule a été créé avec succès!');
+    alert('Le client a été créé avec succès!');
 }

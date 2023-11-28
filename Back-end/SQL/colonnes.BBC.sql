@@ -4,13 +4,10 @@ INSERT INTO `clients` (`cli_id`, `cli_nom`, `cli_prenom`, `cli_adresse`, `cli_zi
 (3, 'ROUTIER', 'Denis', '29 rue Auguste Testelin', '59100', 'Roubaix', '0699365520', 'routier.denis@gmail.com', 'Peugeot 5008', 'routier.denis', 'routier.D'),
 (4, 'CARPENTIER', 'Elisabeth', '24 rue Henri Roth', '59000', 'Lille', '0644587111', 'carp.beth@gmail.com', 'Jeep Grand Cherokee','carpentier.elisabeht', 'carpentier.E'),
 (5, 'SIMEON', 'Virginie', '114 Bis rue de Lille', '59200', 'Tourcoing', '0712598963', 'simeon.virginie@outlook.fr', 'Mercedes Classe A', 'simeon.virginie', 'simeon.V'),
-(6, 'LEULEU', 'Jordan', '88 rue de la Poste', '59100', 'Roubaix', '0641458732', 'jojo59@gmail.com', 'Opel Zafira (2017)','leuleu.jordan', 'leuleu.J'),
-(7, 'VANDERVASTE', 'Lucie', '12/4 rue de la Vigne', '59200', 'Tourcoing', '0751996321', 'lucie.vander@outlook.com', 'Peugeot 308', 'vandervaste.lucie', 'vandervaste.L');
-(8, 'DUFOUR', 'Valentin', '78 rue Anatole France', '59170', 'Croix', '0608784105', 'valentin52@gmail.com', 'Opel Zafira (2010)','dufour.valentin', 'dufour.V'),
-(9, 'GRINSCOKI', 'Sylvie', '112/4 rue Louis Brailleur', '59000', 'Lille', 'Null', 'sylvie.grin-59@outlook.fr', 'Ford Escosport', 'grinscoki.sylvie', 'grinscoki.S'),
-
-INSERT INTO `agence` (`age_id`, `age_nom`, `age_adresse`, `age_zipcode`, `age_ville`, `age_ville`, `age_phone`, `age_mail`) VALUES
-(1, 'Bye Buy Car Lille', '11 rue du Jardin Public', '59235', 'Bercée', '06.51.53.65.32', 'm.costeaux@bye-buy-car.com');
+(6, 'DUFOUR', 'Valentin', '78 rue Anatole France', '59170', 'Croix', '0608784105', 'valentin52@gmail.com', 'Opel Zafira (2010)','dufour.valentin', 'dufour.V'),
+(7, 'GRINSCOKI', 'Sylvie', '112/4 rue Louis Brailleur', '59000', 'Lille', 'Null', 'sylvie.grin-59@outlook.fr', 'Ford Escosport', 'grinscoki.sylvie', 'grinscoki.S');
+(8, 'LEULEU', 'Jordan', '88 rue de la Poste', '59100', 'Roubaix', '0641458732', 'jojo59@gmail.com', 'Opel Zafira (2017)','leuleu.jordan', 'leuleu.J'),
+(9, 'VANDERVASTE', 'Lucie', '12/4 rue de la Vigne', '59200', 'Tourcoing', '0751996321', 'lucie.vander@outlook.com', 'Peugeot 308', 'vandervaste.lucie', 'vandervaste.L'),
 
 INSERT INTO `posts` (`pos_id`, `pos_libelle`) VALUES
 (1, 'Gérant'),
@@ -19,9 +16,6 @@ INSERT INTO `posts` (`pos_id`, `pos_libelle`) VALUES
 INSERT INTO `employees` (`emp_nom`, `emp_prenom`, `emp_adresse`, `emp_zipcode`, `emp_ville`, `emp_phone`, `emp_mail`, `emp_age_id`) VALUES
 ('COSTEAUX', 'Morgan', '11 rue du Jardin Public', '59235', 'Bercée', '06.51.53.65.32', 'm.costeaux@bye-buy-car.com', 1),
 ('SURIN', 'Benjamin', '24 rue Pasteur', '59113', 'Seclin', '0756431212', 'benjamin.surin@bye-buy-car.com', 1);
-
-INSERT INTO `utilisateurs` (`uti_nom_utilisateur`, `uti_mot_de_passe`) VALUES
-('morgan.c', '$mot_de_passe_hache');
 
 INSERT INTO `vehicules` (`veh_id`, `veh_marque`, `veh_modele`, `veh_annee`, `veh_kilometre`, `veh_couleur`, `veh_carburant`, `veh_transmission`, `veh_prix`) VALUES
 (1, 'Citroën', 'Aircross Shine', '2019', '12 900km', 'noir', 'Essence', 'Manuelle', '18 900€'),
@@ -34,6 +28,16 @@ INSERT INTO `vehicules` (`veh_id`, `veh_marque`, `veh_modele`, `veh_annee`, `veh
 (8, 'Opel', 'Zafira', '2010', '171 500km', 'Gris Foncé', 'Diesel', 'Manuelle', '9 990€'),
 (9, 'Ford', 'Ecosport', '2014', '104 000km', 'Blanc', 'Essence', 'Manuelle', '10 500€');
 
+INSERT INTO `clients_vehicules` (`cv_veh_id`, `cv_cli_id`, `cv_veh_marque`, `cv_veh_modele`, `cv_cli_nom`, `cv_cli_prenom`) VALUES
+(1, 2, 'Citroën', 'Aircross Shine', 'FRANCO', 'Robert'),
+(2, 7, 'Peugeot', '3008', 'GRINSCOKI', 'Sylvie'),
+(3, 2, 'Peugeot', '5008', 'FRANCO', 'Robert'),
+(4, 5, 'Jeep', 'Grand Cherokee', 'SIMEON', 'Virginie'), 
+(5, 8, 'Mercedes', 'Classe A', 'LEULEU', 'Jordan'),
+(6, 4, 'Opel', 'Zafira', 'CARPENTIER', 'Elisabeth'),
+(7, 1, 'Peugeot', '308', 'LAVIGNE', 'Francis'),
+(8, 3, 'Opel', 'Zafira', 'ROUTIER', 'Denis'),
+(9, 9, 'Ford', 'Ecosport', 'VANDERVASTE', 'Lucie');
 
 INSERT INTO `vendre` (`ven_veh_id`, `ven_cli_id`, `ven_status`) VALUES
 (1, 1, 'En cours'),

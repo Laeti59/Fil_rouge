@@ -8,7 +8,7 @@
     <link rel="stylesheet" href= "<?= base_url('Assets/CSS/header.css') ?>" >
     <link rel="stylesheet" href= "<?= base_url('Assets/CSS/footer.css') ?>" >
     <link rel="stylesheet" href= "<?= base_url('Assets/CSS/popup-connection.css') ?>">
-    
+    <script src="<?php echo base_url('Assets/JS/jquery-3.7.1.js'); ?>"></script> 
     <script src="https://kit.fontawesome.com/dce549eaed.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Jomolhari&family=Lato:ital,wght@0,100;1,100&family=Nuosu+SIL&family=Open+Sans:wght@300&display=swap');

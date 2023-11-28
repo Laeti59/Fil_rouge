@@ -14,20 +14,8 @@ CREATE TABLE IF NOT EXISTS `clients` (
     `cli_ville` varchar(50) NOT NULL,
     `cli_phone` varchar(50) NOT NULL,
     `cli_mail` varchar(50) NOT NULL,
-    `cli_vehicule` varchar(50) NOT NULL,
     `cli_login` varchar(50) NOT NULL,
     `cli_password` varchar(50) NOT NULL
-);
-
-DROP TABLE IF EXISTS `agence`;
-CREATE TABLE IF NOT EXISTS `agence` (
-    `age_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `age_nom` varchar(50) NOT NULL,
-    `age_adresse` varchar(50) NOT NULL,
-    `age_zipcode` varchar(50) NOT NULL,
-    `age_ville` varchar(50) NOT NULL,
-    `age_phone` varchar(50) NOT NULL,
-    `age_mail` varchar(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS `posts`;
@@ -46,8 +34,8 @@ CREATE TABLE IF NOT EXISTS `employees` (
     `emp_ville` varchar(50) NOT NULL,
     `emp_phone` varchar(50) NOT NULL,
     `emp_mail` varchar(50) NOT NULL,
-    `emp_age_id` INT NOT NULL,
-    CONSTRAINT FK_EMPLOYEES_AGENCE FOREIGN KEY (emp_age_id) REFERENCES agence (age_id)
+    `emp_login` varchar(50) NOT NULL,
+    `emp_password` varchar(255) NOT NULL
 );
 
 DROP TABLE IF EXISTS `utilisateurs`;
@@ -67,7 +55,9 @@ CREATE TABLE IF NOT EXISTS `vehicules` (
     `veh_couleur` varchar(50) NOT NULL, 
     `veh_carburant` varchar(50) NOT NULL,
     `veh_transmission` varchar(50) NOT NULL,
-    `veh_prix` varchar(50) NOT NULL
+    `veh_prix` varchar(50) NOT NULL,
+    `cli_id` INT NOT NULL,
+    CONSTRAINT FK_VEHICULES_CLIENTS FOREIGN KEY (cli_id) REFERENCES clients (cli_id)
 );
 
 DROP TABLE IF EXISTS `vendre`;
@@ -115,6 +105,8 @@ DROP TABLE IF EXISTS `options_vehicules`;
 CREATE TABLE IF NOT EXISTS `options_vehicules` (
     `opt_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `opt_libelle` varchar (255) NOT NULL
+    `opt_veh_id` INT NOT NULL,
+    CONSTRAINT FK_OPTIONS_VEHICULES FOREIGN KEY (opt_veh_id) REFERENCES vehicules (veh_id)
 );
 
 DROP TABLE IF EXISTS `assigner`;
@@ -136,15 +128,6 @@ CREATE TABLE IF NOT EXISTS `occuper` (
     UNIQUE KEY `unique_employee_occupation` (`occ_emp_id`)
 );
 
-DROP TABLE IF EXISTS `illustrer`;
-CREATE TABLE IF NOT EXISTS `illustrer` (
-    `ill_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `ill_veh_id` INT NOT NULL,
-    `ill_pho_id` INT NOT NULL,
-    CONSTRAINT FK_ILLUSTRER_VEHICULE FOREIGN KEY (ill_veh_id) REFERENCES vehicules (veh_id),
-    CONSTRAINT FK_ILLUSTRER_PHOTOS FOREIGN KEY (ill_pho_id) REFERENCES photos (pho_id)
-);
-
 DROP TABLE IF EXISTS `messagerie`;
 CREATE TABLE IF NOT EXISTS `messagerie` (
     `mes_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -153,4 +136,13 @@ CREATE TABLE IF NOT EXISTS `messagerie` (
     `mes_cli_id` INT NOT NULL,
     CONSTRAINT FK_MESSAGERIE_EMPLOYEES FOREIGN KEY (mes_emp_id) REFERENCES employees (emp_id),
     CONSTRAINT FK_MESSAGERIE_CLIENTS FOREIGN KEY (mes_cli_id) REFERENCES clients (cli_id)
+);
+
+DROP TABLE IF EXISTS `clients_vehicules`;
+CREATE TABLE IF NOT EXISTS `clients_vehicules` (
+    `cv_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `cv_veh_id` INT NOT NULL,
+    `cv_cli_id` INT NOT NULL,
+    CONSTRAINT FK_CLIENTS_VEHICULES_VEHICULES FOREIGN KEY (cv_veh_id) REFERENCES vehicules (veh_id),
+    CONSTRAINT FK_CLIENTS_VEHICULES_CLIENTS FOREIGN KEY (cv_cli_id) REFERENCES clients (cli_id),
 );

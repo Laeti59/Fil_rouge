@@ -4,6 +4,17 @@
     margin-top: 50px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.deconnection {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+
 .contenu{
     display: flex;
     justify-content: center;

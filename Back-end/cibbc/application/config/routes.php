@@ -58,19 +58,35 @@ $route['translate_uri_dashes'] = FALSE;
 $route['accueil'] = 'PageAccueil/index'; 
 $route['EspacePro'] = 'EspacePro/recupereNom/id';
 
+// Espace Professionnel dédié aux véhicules
 $route['AfficherVehicule'] = 'Crud/afficherVehicule/id';
 $route['AjouterVehicule'] = 'Crud/ajouterVehicule';
 $route['SupprimerVehicule'] = 'Crud/supprimerVehicule/id';
 $route['ModifierVehicule'] = 'Crud/modifierVehicule';
 
+// Espace Professionnel dédié aux clients
 $route['AfficherClient'] = 'CrudClient/afficherClient/id';
 $route['AjouterClient'] = 'CrudClient/ajouterClient';
 $route['SupprimerClient'] = 'CrudClient/supprimerClient/id';
 $route['ModifierClient'] = 'CrudClient/modifierClient';
 
+// Espace Professionnel dédié aux employés
 $route['AfficherEmployes'] = 'CrudEmployees/afficherEmployes';
 $route['AjouterEmployes'] = 'CrudEmployees/ajouterEmployes';
 $route['ModifierEmployes'] = 'CrudEmployees/modifierEmployes';
 $route['SupprimerEmployes'] = 'CrudEmployees/supprimerEmployes';
+
+$route['PageVendeur'] = 'PageClient/contactVendeur';
+$route['PageAcheteur'] = 'PageClient/contactAcheteur';
+
+// Fiches véhicules
+$route['CitroenAircross'] = 'FicheVehicule/recupererId/1';
+$route['Peugeot3008'] = 'FicheVehicule/recupererId/2';
+$route['Peugeot5008'] = 'FicheVehicule/recupererId/3';
+$route['JeepGrandCherokee'] = 'FicheVehicule/recupererId/4';
+$route['MercedesClasseA'] = 'FicheVehicule/recupererId/5';
+$route['OpelZafira2017'] = 'FicheVehicule/recupererId/6';
+$route['Peugeot308'] = 'FicheVehicule/recupererId/7';
+$route['OpelZafira2010'] = 'FicheVehicule/recupererId/8';
 
 

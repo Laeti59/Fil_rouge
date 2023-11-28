@@ -53,10 +53,6 @@
                 <input type="text" id="mail" name="mail">
             </div>
             <div class="form-group">
-                <label for="vehicule">Véhicule:</label>
-                <input type="text" id="vehicule" name="vehicule">
-            </div>
-            <div class="form-group">
                 <label for="login">Login:</label>
                 <input type="text" id="login" name="login">
             </div>

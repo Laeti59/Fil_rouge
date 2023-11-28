@@ -9,16 +9,23 @@
 </head>
     
 <body>
+
+    <?php if($this->session->flashdata('error')): ?>
+        <div class="error-message">
+            <?= $this->session->flashdata('error') ?>
+        </div>
+    <?php endif; ?>
+
     <!--Ici les deux boutons achat et vente-->
     <section>
         <div class="achat-vente">
 
             <div class="lien-vendeur">
-                <a href="../HTML/etre-recontacté-vendeur.html"><span>Je veux vendre</span></a>
+                <a href="<?=site_url('PageVendeur');?>"><span>Je veux vendre</span></a>
             </div>
 
             <div class="lien-acheteur">
-                <a href="../HTML/etre-recontacté-acheteur.html"><span>Je veux acheter</span></a>
+                <a href="<?=site_url('PageAcheteur');?>"><span>Je veux acheter</span></a>
             </div>
         </div>
     </section>

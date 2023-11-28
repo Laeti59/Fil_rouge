@@ -22,6 +22,8 @@ class CrudModelEmployees extends CI_Model {
         || empty($phone) || empty($mail) ||empty($login) || empty($password)) {
             return false;
         }
+
+        $password_hashed = password_hash($password, PASSWORD_DEFAULT);
     
         $data = array(
             'emp_nom' => $nom,
@@ -31,8 +33,8 @@ class CrudModelEmployees extends CI_Model {
             'emp_ville' => $ville,
             'emp_phone' => $phone,
             'emp_mail' => $mail,
-            'cli_login' => $login,
-            'cli_password'=> $password
+            'emp_login' => $login,
+            'emp_password'=> $password_hashed
         );
     
         if ($this->db->insert('employees', $data)) {
@@ -65,8 +67,8 @@ class CrudModelEmployees extends CI_Model {
             'emp_ville' => $ville,
             'emp_phone' => $phone,
             'emp_mail' => $mail,
-            'cli_login' => $login,
-            'cli_password'=> $password
+            'emp_login' => $login,
+            'emp_password'=> $password
         );
     
         $this->db->where('emp_id', $posted_id);

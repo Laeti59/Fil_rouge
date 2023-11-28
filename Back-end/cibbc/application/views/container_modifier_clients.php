@@ -29,6 +29,7 @@
                     <th>Ville</th>
                     <th>Téléphone</th>
                     <th>Mail</th>
+                    <th>Login</th>
                 </tr>
                 <?php foreach($liste as $client): ?>
                 <tr id="recuperer<?= $client->cli_id ?>">
@@ -41,6 +42,8 @@
                     <td class="ville"><?= $client->cli_ville ?></td>
                     <td class="phone"><?= $client->cli_phone ?></td>
                     <td class="mail-class"><?= $client->cli_mail ?></td>
+                    <td class="login"><?= $client->cli_login ?></td>
+                    <td class="password"><?= $client->cli_password ?></td>
                 </tr>
 
                 <?php endforeach; ?>
@@ -79,12 +82,13 @@
                 <label for="zipcode">Code Postal:</label>
                 <input type="text" id="zipcode" name="zipcode" placeholder="<?= isset($selected_client) ? $selected_client->cli_zipcode : '' ?>">
             </div>
-        </div>
-        <div class="groupe2">
             <div class="form-group">
                 <label for="ville">Ville:</label>
                 <input type="text" id="ville" name="ville" placeholder="<?= isset($selected_client) ? $selected_client->cli_ville : '' ?>">
             </div>
+        </div>
+        <div class="groupe2">
+            
             <div class="form-group">
                 <label for="phone">Téléphone:</label>
                 <input type="text" id="phone" name="phone" placeholder="<?= isset($selected_client) ? $selected_client->cli_phone : '' ?>">
@@ -92,6 +96,14 @@
             <div class="form-group">
                 <label for="mail">Mail:</label>
                 <input type="text" id="mail" name="mail" placeholder="<?= isset($selected_client) ? $selected_client->cli_mail : '' ?>">
+            </div>
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" placeholder="<?= isset($selected_client) ? $selected_client->cli_phone : '' ?>">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" placeholder="<?= isset($selected_client) ? $selected_client->cli_mail : '' ?>">
             </div>
         </div>
 

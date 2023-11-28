@@ -29,6 +29,8 @@
                     <th>Ville</th>
                     <th>Téléphone</th>
                     <th>Mail</th>
+                    <th>Login</th>
+                    <th class="id">Password</th>
                 </tr>
                 <?php foreach($liste as $employe): ?>
                 <tr id="recuperer<?= $employe->emp_id ?>">
@@ -41,6 +43,8 @@
                     <td class="ville"><?= $employe->emp_ville ?></td>
                     <td class="phone"><?= $employe->emp_phone ?></td>
                     <td class="mail-class"><?= $employe->emp_mail ?></td>
+                    <td class="login"><?= $employe->emp_login ?></td>
+                    <td class="password"><?= $employe->emp_password ?></td>
                 </tr>
 
                 <?php endforeach; ?>
@@ -79,12 +83,13 @@
                 <label for="zipcode">Code Postal:</label>
                 <input type="text" id="zipcode" name="zipcode" placeholder="<?= isset($selected_employe) ? $selected_employe->emp_zipcode : '' ?>">
             </div>
-        </div>
-        <div class="groupe2">
-        <div class="form-group">
+            <div class="form-group">
                 <label for="ville">Ville:</label>
                 <input type="text" id="ville" name="ville">
             </div>
+        </div>
+        <div class="groupe2">
+        
             <div class="form-group">
                 <label for="phone">Téléphone:</label>
                 <input type="text" id="phone" name="phone" placeholder="<?= isset($selected_employe) ? $selected_employe->emp_phone : '' ?>">
@@ -92,6 +97,14 @@
             <div class="form-group">
                 <label for="mail">Mail:</label>
                 <input type="text" id="mail" name="mail" placeholder="<?= isset($selected_employe) ? $selected_employe->emp_mail : '' ?>">
+            </div>
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" placeholder="<?= isset($selected_employe) ? $selected_employe->emp_login : '' ?>">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" placeholder="<?= isset($selected_employe) ? $selected_employe->emp_password : '' ?>">
             </div>
         </div>
 

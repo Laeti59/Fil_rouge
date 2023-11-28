@@ -7,46 +7,46 @@
     margin-left: 50px;
 }
 
-.h3-titre{
-    font-size: 35px;
-}
 
-.photo {
-    margin-top: 20px;
+.h3-titre{
+    font-size: 30px;
+    margin-left: 30px;
 }
 
 
 /* Section Two*/
 
 .section-two{
+    margin-top: -380px;
     width: 70%;
     display: flex;
     justify-content: center;
-    margin-top: -310px;
 }
 
-.description {
-    margin-left: 80px;
-}
+/* Le contenu*/
 
-.titre-description{
+.les-titres {
     display: flex;
     justify-content: space-evenly;
 }
 
-.lien-vue {
-    margin-top: 10px;
+.contenu {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.contenu input {
+    margin-bottom:  15px;
+}
+
+.contenu p {
+    margin-bottom: 10px;
 }
 
 .descp{
+    margin-left: 150px;
     padding-right: 180px;
 }
-
-.les-infos p {
-    margin-top: 10px;
-}
-
-/* Le contenu*/
 
 .button-360{
     background-color: #EE1F51;
@@ -72,42 +72,9 @@
     font-style: italic;
 }
 
-/* Les options*/
-
-.section-three{
-    width: 60%;
-    margin-top: 70px;
-    margin-bottom: 50px;
+.couleur-info {
+    color: #EE1F51;
 }
-
-.bloc{
-    content: "";
-    display: table;
-    clear: 0 10px;
-    border: 1px solid #B8B8B8;
-    background-color: #dcdde1;
-    margin-left: 50px;
-}
-
-.titre-bloc{
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
-    margin-top: 10px;
-}
-
-div .liste-1,
-div .liste-2{
-    float: left;
-    height: 220px;
-    padding: 0 40px;
-    margin-top: 10px;
-}
-
-.liste-2{
-    margin-left: 80px;
-}
-
 
 /* Le formulaire*/
 
@@ -125,7 +92,7 @@ div .liste-2{
 .bloc-form-contenu{
     width: 40%;
     margin-left: 130px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .bloc-form-contenu input{
@@ -146,4 +113,41 @@ div .liste-2{
     background-color: #EE1F51;
     border: 1px solid #B8B8B8;
     cursor: pointer;
+}
+
+/* Les options*/
+
+.section-three{
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    content: "";
+    display: table;
+    clear: 0 10px;
+    border: 1px solid #B8B8B8;
+    background-color: #dcdde1;
+    margin-left: 50px;
+}
+
+.section-three h2{
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.section-three li {
+    margin-bottom: 5px;
+}
+
+.section-three .liste-1,
+.section-three .liste-2{
+    float: left;
+    height: 230px;
+    padding: 0px 40px;
+}
+
+.liste-2{
+    margin-left: 80px;
 }
