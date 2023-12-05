@@ -17,7 +17,7 @@
     </div>
 </section>
 
-<form action="<?= site_url('CrudClient/ajouterClient') ?>" method="post" onsubmit="return submitForm()">
+<form action="<?= site_url('CrudClient/ajouterClient') ?>" method="post" onsubmit="return submitForm(event)" enctype="multipart/form-data">
 
     <div class="container">
 
@@ -60,7 +60,73 @@
                 <label for="password">Password:</label>
                 <input type="text" id="password" name="password">
             </div>
-            
+            <div class="form-group-checkbox">
+            <label for="creer_vehicule">Créer un nouveau véhicule pour ce client</label>
+            <input type="checkbox" id="creer_vehicule" class="creer_vehicule" name="creer_vehicule">
+            </div>
+        </div>
+    </div>
+
+    <div id="creer_vehicule_form" class="formulaire" style="display:none;">
+
+        <div class="groupe3">
+
+            <div class="form-group2">
+                <label for="marque">Marque:</label>
+                <input type="text" id="marque" name="marque">
+            </div>
+
+            <div class="form-group2">
+                <label for="modele">Modèle:</label>
+                <input type="text" id="modele" name="modele">
+            </div>
+
+            <div class="form-group2">
+                <label for="annee">Année:</label>
+                <input type="text" id="annee" name="annee">
+            </div>
+
+            <div class="form-group2">
+                <label for="kilometrage">Kilométrage:</label>
+                <input type="text" id="kilometrage" name="kilometrage">
+            </div>
+            <div>
+                <input type="file" class="images" name="images[]" multiple accept=".png, .jpg, .jpeg"><br><br>
+            </div>
+        </div>
+
+        <div class="groupe4">
+
+            <div class="form-group2">
+                <label for="couleur">Couleur:</label>
+                <input type="text" id="couleur" name="couleur">
+            </div>
+
+            <div class="form-group2">
+                <label for="carburant">Carburant:</label>
+                <input type="text" id="carburant" name="carburant">
+            </div>
+
+            <div class="form-group2">
+                <label for="transmission">Transmission:</label>
+                <input type="text" id="transmission" name="transmission">
+            </div>
+
+            <div class="form-group2">
+                <label for="prix">Prix:</label> 
+                <input type="text" id="prix" name="prix">
+            </div>
+
+            <div class="form-group2">
+            <label for="options" class="titre-opt" >Options du véhicule :</label><br>
+            <select name="options[]" id="options" multiple="multiple">
+                <?php foreach ($liste_options as $option) : ?>
+                    <option value="<?php echo $option->opt_id; ?>">
+                        <?php echo $option->opt_libelle; ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+            </div>
         </div>
 
     </div>

@@ -17,7 +17,7 @@
     </div>
 </section>
 
-<form action="<?= site_url('Crud/ajouterVehicule') ?>" method="post" onsubmit="return submitForm(event)" enctype="multipart/form-data">
+<form action="<?= site_url('Crud/ajouterVehicule') ?>" method="post" onsubmit="return submitForm(event)"  >
 
     <div class="container">
 

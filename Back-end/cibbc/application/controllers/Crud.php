@@ -47,6 +47,7 @@ class Crud extends CI_Controller {
         // Afficher la liste des options
         $data['liste_options'] = $this->CrudModel->getOptions();
 
+        // Si le véhciules est créé alors on peut insérer les photos
         if ($vehiculeID) {
             $upload_config['upload_path'] =  FCPATH . "Assets/UplodedPictures";
             $upload_config['allowed_types'] = 'gif|jpg|png';
@@ -84,8 +85,10 @@ class Crud extends CI_Controller {
                 }
             }
 
+            // Si le véhciules est créé alors on peut insérer les options
             $this->CrudModel->associerOptionsVehicule($options_selectionnees, $vehiculeID);
 
+            // Si le véhciules est créé alors on peut associer le véhciule à un client
             $this->CrudModel->associerVehiculeClient($clientID, $vehiculeID);
     
             redirect('EspacePro');
